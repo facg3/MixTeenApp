@@ -4,6 +4,8 @@
   "description": "it's an application for teaching the children how to code through games",
   "main": "index.js",
   "scripts": {
+    "start": "node src",
+    "start:watch": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
