@@ -1,0 +1,147 @@
+body {
+  margin: auto;
+  padding: 0;
+}
+
+.para {
+  direction: ltr;
+  text-align: center;
+  color: #000;
+  background-color: #03a9f445;
+  width:100%;
+  height: 210px;
+  padding-top: 40px;
+}
+
+.about {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  direction: ltr;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  padding-top:20px;
+  padding-bottom: 20px;
+}
+
+#h1 {
+  direction: ltr;
+  margin: 0;
+  text-align: center;
+  color: #000;
+  font-size: 50px;
+  padding-top:20px:
+}
+
+#p1 {
+  direction: ltr;
+  text-align: center;
+  color: #000;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+.about-us{
+  width: 100%;
+  height: auto;
+
+}
+
+.team{
+  width:auto;
+  height: 350px;
+  padding-top: 10px;
+
+}
+  .div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 40px;
+  }
+
+.marwa{
+  height:200px;
+  width: 25%;
+  padding:5px;
+  padding-top: 20px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.marwa-img{
+  border-radius: 50%;
+  width:200px;
+  display: flex;
+  justify-content: center;
+}
+.marwa-img:hover{
+  width: 220px;
+  opacity: 0.4;
+}
+.p-marwa{
+  text-align: center;
+  color:#000;
+}
+.ismail{
+  height:200px;
+  width: 25%;
+  padding:5px;
+  padding-top: 20px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.ismail-img{
+  border-radius: 50%;
+  width:200px;
+  display: flex;
+  justify-content: center;
+}
+
+.ismail-img:hover{
+  width: 220px;
+  opacity: 0.4;
+}
+.p-ismail{
+  text-align: center;
+  color: #000;
+}
+.nadia{
+  height:200px;
+  width: 25%;
+  padding:5px;
+  padding-top: 20px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+align-items: center;
+}
+.nadia-img{
+  border-radius: 50%;
+  width:200px;
+  display: flex;
+  justify-content: center;
+}
+.nadia-img:hover{
+  width: 220px;
+  opacity: 0.4;
+}
+.p-nadia{
+  text-align: center;
+  color: #000;
+}
+#h2{
+  text-align: center;
+  color: #000;
+}

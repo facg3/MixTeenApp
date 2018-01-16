@@ -23,7 +23,7 @@ app.engine('hbs',hbars({
 }));
 
 app.set('port',process.env.PORT || 4000);
-// app.use(favicon(path.join(__dirname, '..', 'public','img',)));
+app.use(favicon(path.join(__dirname, '..','public','images/icon.ico')));
 app.use(routes);
 
 
