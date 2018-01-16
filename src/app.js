@@ -7,7 +7,7 @@ const hbars = require('express-handlebars');
 const path = require('path');
 const routes = require('./controllers');
 
-// const favicon = require('serve-favicon');
+const favicon = require('serve-favicon');
 const bodyparser = require('body-parser');
 
 app.use(bodyparser.json());
