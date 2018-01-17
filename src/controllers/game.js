@@ -1,3 +1,3 @@
 exports.get = (req, res) => {
-  res.render('game', { game: true });
+  res.render('game', { g: true });
 };
