@@ -78,6 +78,3 @@ test('error test route', (t) => {
       t.end();
     });
 });
-
-
-test.onFinish(() => process.exit(0));

@@ -1,5 +1,3 @@
-const path = require('path');
-
 exports.client = (req, res) => {
   res.render('404', {
     activePage: {

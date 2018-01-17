@@ -1,0 +1,105 @@
+html,body{
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.container {
+  width: 95%;
+  max-width: 1200px;
+}
+
+#game {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  flex-grow: 1;
+}
+#game .container {
+  display: flex;
+  justify-content: space-around;
+}
+#game .container .drop-play {
+  width: 100%;
+  height: 90%;
+}
+#game .container .small-row{
+  width: 30%;
+  background-color: #fff;
+  color: #000;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#game .container .small-row .title{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  width: 80%
+}
+#game .container .small-row .space-box {
+  width: auto;
+  height: 2px;
+  background-color: #000;
+}
+#game .container .drop-boxes {
+  width: 100%;
+  height: 40%;
+  border: 1px solid #000;
+  display: flex;
+  flex-wrap: wrap;
+}
+#game .container .drop-boxes .block{
+  display: flex;
+  width: 40%;
+  height: 100%;
+  background-color: grey;
+  order: 2;
+}
+#game .container .drop-boxes .block-code{
+  display: flex;
+  width: 60%;
+  height: 100%;
+  background-color: #fff;
+  order: 1;
+}
+#game .container .larg-row{
+  width: 100%;
+  height: 60%;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+#game .container .larg-row .space-box{
+  width: 100%;
+  height: 4%;
+
+}
+#game .container .larg-row .screen-button{
+  width: 100%;
+  height: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#game .container .larg-row .screen-button #play{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 47px;
+  height: 25px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: none;
+}
+#game .container .larg-row .screen{
+  width: 90%;
+  height: 100%;
+  background-color: #fff;
+  margin-bottom: 5px;
+}
