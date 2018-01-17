@@ -2,9 +2,11 @@ const express = require('express');
 
 const router = express.Router();
 const home = require('./home');
-
-router.get('/', home.get);
 const contact = require('./contact');
+const about = require('./about');
+const error = require('./error');
 
-router.get('/contact', contact.get);
-module.exports = router;
+module.exports = router.get('/', home.get)
+  .get('/contact', contact.get)
+  .get('/about', about.get)
+  .get('error404', error.get);
