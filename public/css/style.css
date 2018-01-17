@@ -103,3 +103,36 @@ html,body{
   background-color: #fff;
   margin-bottom: 5px;
 }
+
+.drag-drop {
+  display: inline-block;
+  min-width: 40px;
+  padding: 2em 0.5em;
+  color: #fff;
+  background-color: #29e;
+  border: 2px solid #fff;
+  transform: translate(0,0);
+  transition: background-color 0.3s;
+  height: 30px;
+}
+/*.drag-drop .can-drop {
+  color: #000;
+  background-color: #4e4;
+}
+.drop-active {
+  border-color: #aaa;
+}
+.drop-target {
+  background-color: #29e;
+  border-color: #fff;
+  border-style: solid;
+}
+.drop-zone {
+  background-color: #ccc;
+  border : 4px dashed transparent;
+  border-radius: 4px;
+  margin: 10px auto 30px;
+  padding: 10px;
+  width: 80%;
+  transition: background-color 0.3s;
+}*/
