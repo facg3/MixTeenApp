@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
 }
-body, figure {
+body {
    background:url("../images/level.png");
   width: 100%;
 overflow-x: hidden;
