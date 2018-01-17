@@ -3,12 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>KidsTeen</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+{{#if h}}
+<link rel="stylesheet" href="/css/stylehome.css">
+{{/if}}
+{{#if g}}
+<link rel="stylesheet" href="/css/style.css">
+{{/if}}
+{{#if l}}
+<link rel="stylesheet" href="/css/stylelevel.css">
+{{/if}}
   </head>
   <body>
-{{>header}}
 {{{body}}}
   </body>
 </html>
