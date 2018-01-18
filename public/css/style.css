@@ -114,6 +114,7 @@ html,body{
   transform: translate(0,0);
   transition: background-color 0.3s;
   height: 30px;
+  cursor: grab;
 }
 /*.drag-drop .can-drop {
   color: #000;
