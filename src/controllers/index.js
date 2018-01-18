@@ -2,7 +2,8 @@ const express = require('express');
 
 const router = express.Router();
 const home = require('./home');
-const game = require('./game');
+const levels = require('./levels');
 
-module.exports = router.get('/', home.get)
-  .get('/game', game.get);
+router.get('/', home.get);
+router.get('/levels', levels.get);
+module.exports = router;
