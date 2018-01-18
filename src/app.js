@@ -6,8 +6,6 @@ const hbars = require('express-handlebars');
 
 const path = require('path');
 const routes = require('./controllers');
-
-const favicon = require('serve-favicon');
 const bodyparser = require('body-parser');
 
 app.use(bodyparser.json());
@@ -24,7 +22,9 @@ app.engine('hbs', hbars({
 }));
 
 app.set('port', process.env.PORT || 4000);
+
 app.use(favicon(path.join(__dirname, '..', 'public', 'images/icon.ico')));
+
 app.use(routes);
 
 
