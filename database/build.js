@@ -1,4 +1,3 @@
-
 const connect = require('./dbConnection');
 const fs = require('fs');
 const path = require('path');
