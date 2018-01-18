@@ -6,7 +6,11 @@
   "scripts": {
     "start": "node src",
     "start:watch": "nodemon src/index.js",
-    "test": "node src/test/testRouter.js"
+
+    "test:rout": "node src/test/testRouter.js"
+
+    "test": "tape database/test/database.js"
+
   },
   "repository": {
     "type": "git",
@@ -22,7 +26,8 @@
     "eslint": "^4.15.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
-    "nodemon": "^1.14.11"
+    "nodemon": "^1.14.11",
+    "tape": "^4.8.0"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
