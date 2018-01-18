@@ -6,7 +6,11 @@
   "scripts": {
     "start": "node src",
     "start:watch": "nodemon src/index.js",
+
+    "test:router": "node src/test/testRouter.js"
+
     "test": "tape database/test/database.js"
+
   },
   "repository": {
     "type": "git",
