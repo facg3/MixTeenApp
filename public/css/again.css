@@ -1,0 +1,42 @@
+body{
+  direction: rtl;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: grey;
+}
+.try {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 40px;
+    border-style: solid;
+    border-color: crimson;
+    border-width: thick;
+
+  }
+
+.exit{
+  height: 40px;
+  width: 40px;
+  padding: 20px;
+}
+.gify{
+  display: flex;
+  justify-content: center;
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+.try-text{
+  display: flex;
+  justify-content: right;
+}
+.message{
+  text-align: center;
+  font-family: monospace;
+  color: red;
+}
