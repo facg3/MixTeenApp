@@ -1,6 +1,8 @@
-const interactjs = require('interactjs');
+const interact = require('interactjs');
 
-console.log(interactjs);
 exports.get = (req, res) => {
-  res.render('game', { interact: interactjs });
+  res.render('game', {
+    interact,
+    game: true,
+  });
 };
