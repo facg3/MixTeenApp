@@ -1,20 +1,6 @@
-function allowDrop(ev) {  // eslint-disable-line
-  ev.preventDefault();
-  ev.stopPropagation();
-}
-function dropHandle(ev) { // eslint-disable-line
-  ev.preventDefault();
-  ev.stopPropagation();
-  var  data = ev.dataTransfer.getData('text'); // eslint-disable-line
-  ev.target.appendChild(document.getElementById(data)); // eslint-disable-line
-}
-function drag(ev) { // eslint-disable-line
-  ev.dataTransfer.setData('text', ev.target.id);
-}
-
-const panelButton = document.getElementById('levels'); // eslint-disable-line
+const panelButton = document.getElementById('levels');
 panelButton.addEventListener('click', () => {
-  const panel = document.querySelector('.panel'); //eslint-disable-line
+  const panel = document.querySelector('.panel');
   if (panel.style.display === 'none') {
     panel.style.display = 'block';
   } else {
