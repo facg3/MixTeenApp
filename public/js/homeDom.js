@@ -1,5 +1,5 @@
 
-const navButton = document.querySelector('.burger-btn'); // eslint-disable-line
+const navButton = document.querySelector('.burger-btn');
 navButton.addEventListener('click', () => {
-  document.querySelector('.list-nav').classList.toggle('active'); // eslint-disable-line
+  document.querySelector('.list-nav').classList.toggle('active');
 });
