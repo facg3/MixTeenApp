@@ -46,7 +46,7 @@ input[type=text], textarea {
   }
 
 
-h3{
+.h3{
   display: flex;
   justify-content: center;
   color: #03A9F4;
