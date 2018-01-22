@@ -1,32 +1,96 @@
 <section id="game">
-  <div class="container">
-    <div class='drop-play'>
-      <div class="drop-boxes">
-        <div class="block">
-
-        </div>
-        <div class="block-code">
-
-        </div>
+  <div class="fluid-container">
+    <div class="menu">
+      <div class="m-item avatar">
       </div>
-      <div class="larg-row">
-        <div class="space-box">
-
+      <div class="menu-container">
+        <div class="m-item">
+          <a href="/"><i class="material-icons md-48">keyboard_backspace</i>
+      <div> الصفحة الرئيسة  </div>
+    </a>
         </div>
-        <div class="screen">
-
+        <div class="m-item">
+          <button id="levels" >
+            <i class="material-icons">games</i>
+      <div> المستويات </div>
+    </button>
         </div>
-        <div class="screen-button">
-          <button id="play">play</button>
+        <div class="m-item">
         </div>
       </div>
     </div>
-    <div class="small-row">
-<div class="title">
-  <h2> المستوى الاول</h2>
-  <div class="space-box"></div>
-</div>
-      <p>قم بتحرك الصورة لجهة اليمين </p>
+    <div class="panel">
+      <div class="panel-container">
+        <div class="panel-info">
+          <h2> المستويات</h2>
+        </div>
+        <div class="p-item">
+          <a href="#"><h4> المستوى الاول</h4></a>
+        </div>
+        <div class="p-item">
+          <a href="#"><h4> المستوى الثاني</h4> </a>
+        </div>
+        <div class="p-item">
+          <a href="#"><h4> المستوى الثالث</h4> </a>
+        </div>
+      </div>
     </div>
-  </div>
+    <div class="left-column">
+      <div class="main">
+        <div class="ide-panel">
+          <div class="inner-main">
+            <div class="ide-header">
+              <div class="container">
+                <div class="session-info">
+                  <div class="score">
+                    <span>N/A</span>
+                    <div class="score-ico"></div>
+                  </div>
+                  <div class="notice">
+                    اعلى تقييم
+                  </div>
+                </div>
+                <div class="question-infos">
+                  <h1>
+              <span>
+                اسم المستوى
+              </span>
+            </h1>
+                </div>
+              </div>
+            </div>
+            <div id="ide-code-screen">
+              <div class="container">
+                <div class="left-block">
+                  <div class="player-dommy">
+                    <div class="larg-row">
+                      <div class="screen">
+                      </div>
+                      <div class="screen-button">
+                        <button id="play">play</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="player-note">
+                    <div class="small-row">
+                      <div class="title">
+                        <h2> المستوى الاول</h2>
+                      </div>
+                      <p>قم بتحرك الصورة لجهة اليمين </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-block">
+                  <div id="defaultContainer" class="block" ondrop="dropHandle(event)" ondragover="allowDrop(event)">
+                    <div id="block-1" ondragstart="drag(event)" class="draggable drag-drop" draggable="true">Drag-drop</div>
+                  </div>
+                  <div id="drop" class="block-code" ondrop="dropHandle(event)" ondragover="allowDrop(event)">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 </section>
+<script type="text/javascript" src="/js/gameDom.js"></script>
