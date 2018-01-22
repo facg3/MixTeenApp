@@ -7,7 +7,7 @@
     "start": "node src",
     "start:watch": "nodemon src/index.js",
     "test": "tape database/test/database.js",
-    "test:router":"tape src/test/testRouter.js"
+    "test:router":"tape src/test/testRouter.js",
   },
   "repository": {
     "type": "git",
