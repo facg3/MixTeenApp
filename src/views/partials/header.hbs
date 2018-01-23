@@ -10,6 +10,15 @@
       <span class="icon-line"></span>
     </button>
     <nav class="list-nav">
+      {{#if login}}
+      <div class="item">
+        <a href="/logout" data-info="تسجيل الخروج ">
+        {{> exit}}
+          <div class="content">  تسجيل الخروج</div>
+          <div class="space-box"></div>
+        </a>
+      </div>
+      {{/if}}
       <div class="item">
         <a href="#" data-info="تواصل معنا">
           <i class="material-icons">contacts</i>
@@ -17,7 +26,6 @@
           <div class="space-box"></div>
         </a>
       </div>
-
       <div class="item">
         <a href="/game" data-info="نبذة عنا   ">
           <i class="material-icons">group</i>
@@ -32,6 +40,15 @@
           <div class="space-box"></div>
         </a>
       </div>
+      {{#if login}}
+      <div class="item">
+        <a href="/" data-info="اسم المستخدم ">
+          <i class="material-icons">account_circle</i>
+          <div class="content"> {{ username}} </div>
+          <div class="space-box"></div>
+        </a>
+      </div>
+      {{/if}}
     </nav>
   </div>
 </header>
