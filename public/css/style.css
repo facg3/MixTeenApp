@@ -46,20 +46,28 @@ html, body {
 .m-item #levels {
   color: #454c55;
   text-align: center;
+  width: 100%;
+  height: 100%;
 }
 .m-item a div {
   text-align: center;
 }
 
 .m-item {
-  width: 80px;
+  width: 100%;
   height: 80px;
   min-height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: beige;
+  border-bottom-left-radius: 3px;
+  margin-bottom: 8px;
+  border-top-left-radius: 8px;
 }
-
+.m-item:active {
+  background-color: #1a99aa;
+}
 .left-column {
   display: flex;
   flex: 2
@@ -258,7 +266,7 @@ html, body {
   padding:20px;
 }
 .panel .panel-container .panel-info h2 {
-text-align: center;
+  text-align: center;
 }
 .panel .panel-container .p-item {
   width: 95%;
