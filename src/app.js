@@ -1,13 +1,17 @@
-const express = require('express');
-
-const app = express();
 
 const hbars = require('express-handlebars');
 
 const path = require('path');
-const routes = require('./controllers');
+
+const routes = require('./controllers/index');
+
 const bodyparser = require('body-parser');
 
+const cookieParser = require('cookie-parser');
+
+const express = require('express');
+
+const app = express();
 
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: false }));
@@ -21,8 +25,9 @@ app.engine('hbs', hbars({
   partialsDir: path.join(__dirname, 'views', 'partials'),
   defaultLayout: 'main',
 }));
-
+app.use(cookieParser());
 app.set('port', process.env.PORT || 4000);
+
 app.use(routes);
 
 
