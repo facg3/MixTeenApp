@@ -2,8 +2,6 @@
 /* check input left */
 let left = document.getElementById('left'),
   form = document.getElementById('QZ');
-
-
 left.addEventListener('input', (e) => {
   const num = left.value;
   if (num === '37') {
@@ -15,8 +13,6 @@ left.addEventListener('input', (e) => {
 /* check input down */
 let down = document.getElementById('down'),
   formDown = document.getElementById('QZ');
-
-
 down.addEventListener('input', (e) => {
   const num = down.value;
   if (num === '38') {
@@ -28,8 +24,6 @@ down.addEventListener('input', (e) => {
 /* check input right */
 let right = document.getElementById('right'),
   formRight = document.getElementById('QZ');
-
-
 right.addEventListener('input', (e) => {
   const num = right.value;
   if (num === '39') {
@@ -41,8 +35,6 @@ right.addEventListener('input', (e) => {
 /* check input up */
 let up = document.getElementById('up'),
   formUp = document.getElementById('QZ');
-
-
 up.addEventListener('input', (e) => {
   const num = up.value;
   if (num === '40') {
@@ -88,6 +80,7 @@ submit.addEventListener('click', () => {
 //   grd += downFun(38);
 //   grd += rightFun(39);
 // }
+/* check input left true or false */
 function leftFun(rsl) {
   let g = 0;
   if (rsl == parseFloat(document.game.left.value)) {
@@ -98,6 +91,7 @@ function leftFun(rsl) {
 	    }
   return g;
 }
+/* check input right true or false */
 function rightFun(rsl) {
   let g = 0;
   if (rsl == parseFloat(document.game.right.value)) {
@@ -109,6 +103,7 @@ function rightFun(rsl) {
   }
   return g;
 }
+/* check input up true or false */
 function upFun(rsl) {
   let g = 0;
   if (rsl == parseFloat(document.game.up.value)) {
@@ -120,7 +115,7 @@ function upFun(rsl) {
   }
   return g;
 }
-
+/* check input down true or false */
 function downFun(rsl) {
   let g = 0;
   if (rsl == parseFloat(document.game.down.value)) {
