@@ -6,4 +6,3 @@ const game = require('./game');
 
 router.get('/', home.get)
   .get('/game', game.get);
-module.exports = router;
