@@ -5,7 +5,6 @@ html, body {
   flex-direction: column;
   height: 100vh;
 }
-
 .menu {
   border-right: 1px solid #41454a;
   width: 90px;
@@ -14,14 +13,12 @@ html, body {
   margin: 0;
   padding: 0;
 }
-
-.m-item.avatar {
+.menu-item.avatar {
   width: 100%;
   height: 90px;
   background-image: url("../images/img_general_avatar.e40ca637.png");
   background-size: contain;
 }
-
 .fluid-container {
   width: 100%;
   margin: 0;
@@ -29,7 +26,6 @@ html, body {
   display: flex;
   flex: 1;
 }
-
 .menu-container {
   height: calc(100% - 90px - 18px);
   overflow: hidden;
@@ -37,21 +33,19 @@ html, body {
   flex-direction: column;
   color: #454c55;
 }
-
-.m-item a {
+.menu-item a {
   text-decoration: none;
   color: #454c55;
   text-align: center;
 }
-.m-item #levels {
+.menu-item #levels {
   color: #454c55;
   text-align: center;
 }
-.m-item a div {
+.menu-item a div {
   text-align: center;
 }
-
-.m-item {
+.menu-item {
   width: 80px;
   height: 80px;
   min-height: 80px;
@@ -59,18 +53,15 @@ html, body {
   justify-content: center;
   align-items: center;
 }
-
 .left-column {
   display: flex;
   flex: 2
 }
-
 .main {
   flex: 1;
   position: relative;
   overflow: hidden;
 }
-
 .inner-main {
   position: absolute;
   top: 0;
@@ -79,37 +70,31 @@ html, body {
   bottom: 0;
   overflow: inherit;
 }
-
 .ide-header {
   background-color: #131C26;
   box-shadow: 5px 10px #ffffff;
   width: 100%;
   height: 42px;
 }
-
 #game {
   display: flex;
   flex-grow: 1;
 }
-
 .main .ide-panel .inner-main .ide-header .container .question-infos {
   color: #fff;
   height: 100%;
   display: flex;
   align-items: center;
 }
-
 .container {
   width: 100%;
   min-width: 1150px;
   height: 100%;
 }
-
 .main .ide-panel .inner-main .ide-header .container {
   display: flex;
   justify-content: space-between;
 }
-
 .ide-header .session-info {
   color: #fff;
   display: flex;
@@ -118,7 +103,6 @@ html, body {
   height: 100%;
   align-items: center;
 }
-
 .ide-header .session-info .score .score-ico {
   background-image: url("../images/ide-black-s16e36b2c64.f9f06027.png");
   background-repeat: no-repeat;
@@ -127,7 +111,6 @@ html, body {
   height: 20px;
   color: #fff;
 }
-
 .ide-header .session-info .score {
   width: 70px;
   height: 100%;
@@ -135,17 +118,23 @@ html, body {
   justify-content: space-around;
   align-items: center;
 }
-
 .main .ide-panel .inner-main #ide-code-screen {
   height: calc(100% - 43px);
   background-color: #131C26;
 }
-
+.list-item{
+  direction: rtl;
+}
+.num{
+  font-size: 16;
+  color:blue;
+  direction: ltr;
+  font-weight: bold;
+}
 #ide-code-screen .container {
   display: flex;
   justify-content: space-between;
 }
-
 #ide-code-screen .container .left-block {
   width: 650px;
   height: 100%;
@@ -154,16 +143,13 @@ html, body {
   justify-content: center;
   align-items: center;
   background-color: #131C25;
-  overflow: scroll;
 }
-
 #ide-code-screen .container .left-block .player-dommy {
   width: 100%;
   height: 57%;
   margin-top: 2px;
   margin-bottom: 5px;
 }
-
 #ide-code-screen .container .left-block .player-note {
   width: 98%;
   height: 40%;
@@ -174,13 +160,11 @@ html, body {
   margin-right: 5px;
   margin-left: 1px;
 }
-
 #ide-code-screen .container .right-block {
   width: 485px;
   height: 100%;
   border-color: #131C25;
 }
-
 .left-block .player-dommy .larg-row {
   width: 100%;
   height: 100%;
@@ -189,7 +173,6 @@ html, body {
   flex-direction: column;
   align-items: center;
 }
-
 .left-block .player-note .small-row p {
   text-align: right;
   margin-left: 3px;
@@ -197,12 +180,13 @@ html, body {
   padding: 5px;
   font-size: 20px
 }
-
+.player-note{
+  overflow-y: scroll;
+}
 .left-block .player-note .small-row .title h2 {
   text-align: center;
-  font-size: 30px
+  font-size: 30px;
 }
-
 .left-block .player-note {
   background-color: #131C26;
   text-align: right;
@@ -212,11 +196,13 @@ html, body {
 #ide-code-screen .container .left-block .larg-row .screen {
   width: 90%;
   height: 85%;
-  background-color: #fff;
+  background:#1e651e;
   margin-bottom: 5px;
   margin-top: 2%;
 }
-
+#myCanvas{
+  visibility: hidden;
+}
 #ide-code-screen .container .right-block {
   display: flex;
   flex-direction: column;
@@ -280,8 +266,8 @@ text-align: center;
   justify-content: flex-end;
 }
 .panel .panel-container {
-    width: 100%;
-    height: inherit;
+  width: 100%;
+  height: inherit;
 }
 .panel .panel-container #close{
   display: flex;
@@ -297,4 +283,68 @@ text-align: center;
 }
 .panel {
   display: none;
+}
+.instruction{
+  list-style: none;
+  color:white;
+  font-size: 20px;
+}
+.dragcode{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.dragcodeo{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  direction: rtl;
+}
+.dragcodeId{
+  font-family: "Tahoma";
+	color: #1C94C4;
+  text-align: center;
+  list-style: none;
+  border: 1px solid #CCC;
+  width: 90px;
+  padding: 3px;
+  margin: 3px;
+  height: 10px;
+  direction: rtl;
+}
+.dragcodeIds{
+  font-family: "Tahoma";
+  color: #1C94C4;
+  direction: rtl;
+  text-align: center;
+  list-style: none;
+  width: 90px;
+  padding: 3px;
+  margin: 3px;
+  height: 6px;
+}
+.dragcodeIdss{
+  font-family: "Tahoma";
+  color: #1C94C4;
+  text-align: center;
+  list-style: none;
+  width: 90px;
+  padding: 3px;
+  margin: 3px;
+  height: 6px;
+}
+#game{
+ margin: 4px;
+ padding-left: 5px;
+}
+.title{
+ display:flex;
+ justify-content:center;
+ align-content:center;
+ color:red;
+}
+#submit{
+ position: absolute;
+ right:200px;
+ bottom: 30px;
 }
