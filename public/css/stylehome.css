@@ -16,15 +16,49 @@ body {
 
 #main .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
+#main .container .video-background{
+position: absolute;
+top: 50%;
+left: 50%;
+}
+#main .container .user-access {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  align-items: center;
+  justify-content: space-around;
+}
+#main .container .user-access .usr-signin,
+#main .container .user-access .usr-signup {
+  width: 250px;
+  height: 52px;
+  background-color: #484542;
 
+}
+#main .container .user-access .usr-signin:active,
+#main .container .user-access .usr-signup :active{
+  background-color: #e19b41;
+}
+#main .container .user-access .usr-signin a,
+#main .container .user-access .usr-signup a{
+  color: #ffffff;
+  width: 100%;
+  font-size: 20px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 #main .container .st-button {
   width: 250px;
   height: 52px;
-  background-color: #eccb15;
+  background-color: #62dd3d;
   border: none;
   font-size: 20px;
   text-decoration: none;
@@ -33,7 +67,9 @@ body {
   align-items: center;
   color: #fff;
 }
-
+#main .container .st-button:active {
+background-color: #1a99aa;
+}
 footer {
   color: #fff;
   width: 100%;
@@ -44,4 +80,11 @@ footer {
   flex-direction: row;
   justify-content: center;
   font-weight: 400;
+}
+@media screen and (max-width:768px) {
+#main .container .user-access {
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 }
