@@ -4,6 +4,7 @@ html, body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+
 }
 
 .menu {
@@ -141,6 +142,15 @@ html, body {
   background-color: #131C26;
 }
 
+.list-item{
+  direction: rtl;
+}
+.num{
+  font-size: 16;
+  color:blue;
+  direction: ltr;
+  font-weight: bold;
+}
 #ide-code-screen .container {
   display: flex;
   justify-content: space-between;
@@ -154,7 +164,7 @@ html, body {
   justify-content: center;
   align-items: center;
   background-color: #131C25;
-  overflow: scroll;
+
 }
 
 #ide-code-screen .container .left-block .player-dommy {
@@ -197,10 +207,14 @@ html, body {
   padding: 5px;
   font-size: 20px
 }
+.player-note{
+  overflow-y: scroll;
+}
 
 .left-block .player-note .small-row .title h2 {
   text-align: center;
-  font-size: 30px
+  font-size: 30px;
+
 }
 
 .left-block .player-note {
@@ -212,11 +226,13 @@ html, body {
 #ide-code-screen .container .left-block .larg-row .screen {
   width: 90%;
   height: 85%;
-  background-color: #fff;
+  background:#1e651e;
   margin-bottom: 5px;
   margin-top: 2%;
 }
-
+#myCanvas{
+  visibility: hidden;
+}
 #ide-code-screen .container .right-block {
   display: flex;
   flex-direction: column;
@@ -298,3 +314,67 @@ text-align: center;
 .panel {
   display: none;
 }
+.instruction{
+  list-style: none;
+
+
+  color:white;
+  font-size: 20px;
+
+}
+
+
+    .dragcode{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
+    .dragcodeo{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      direction: rtl;
+    }
+    .dragcodeId{
+      font-family: "Tahoma";
+			color: #1C94C4;
+      text-align: center;
+      list-style: none;
+      border: 1px solid #CCC;
+      width: 90px;
+      padding: 3px;
+      margin: 3px;
+      height: 10px;
+        direction: rtl;
+    }
+    .dragcodeIds{
+      font-family: "Tahoma";
+      color: #1C94C4;
+        direction: rtl;
+      text-align: center;
+      list-style: none;
+      width: 90px;
+      padding: 3px;
+      margin: 3px;
+      height: 6px;
+    }
+    .dragcodeIdss{
+      font-family: "Tahoma";
+      color: #1C94C4;
+      text-align: center;
+      list-style: none;
+      width: 90px;
+      padding: 3px;
+      margin: 3px;
+      height: 6px;
+    }
+
+  form{
+    margin: 4px;
+padding-left: 5px;
+  }
+  #submit{
+    position: absolute;
+right:200px;
+bottom: 30px;
+  }
