@@ -1,10 +1,10 @@
 
 /* check input left */
 let left = document.getElementById('left'),
-  form = document.getElementById('QZ');
+  formLeft = document.getElementById('code');
 left.addEventListener('input', (e) => {
-  const num = left.value;
-  if (num === '37') {
+  const codeLeft = left.value;
+  if (codeLeft === '37') {
     left.style.background = 'green';
   } else {
     left.style.background = 'red';
@@ -12,10 +12,10 @@ left.addEventListener('input', (e) => {
 });
 /* check input down */
 let down = document.getElementById('down'),
-  formDown = document.getElementById('QZ');
+  formDown = document.getElementById('code');
 down.addEventListener('input', (e) => {
-  const num = down.value;
-  if (num === '38') {
+  const codeDown = down.value;
+  if (codeDown === '38') {
     down.style.background = 'green';
   } else {
     down.style.background = 'red';
@@ -23,10 +23,10 @@ down.addEventListener('input', (e) => {
 });
 /* check input right */
 let right = document.getElementById('right'),
-  formRight = document.getElementById('QZ');
+  formRight = document.getElementById('code');
 right.addEventListener('input', (e) => {
-  const num = right.value;
-  if (num === '39') {
+  const codeRight = right.value;
+  if (codeRight === '39') {
     right.style.background = 'green';
   } else {
     right.style.background = 'red';
@@ -34,10 +34,10 @@ right.addEventListener('input', (e) => {
 });
 /* check input up */
 let up = document.getElementById('up'),
-  formUp = document.getElementById('QZ');
+  formUp = document.getElementById('code');
 up.addEventListener('input', (e) => {
-  const num = up.value;
-  if (num === '40') {
+  const codeUp = up.value;
+  if (codeUp === '40') {
     up.style.background = 'green';
   } else {
     up.style.background = 'red';
@@ -46,12 +46,12 @@ up.addEventListener('input', (e) => {
 /* function submit */
 const submit = document.getElementById('submit');
 submit.addEventListener('click', () => {
-  let grd = 0;
-  grd += leftFun(37);
-  grd += upFun(40);
-  grd += downFun(38);
-  grd += rightFun(39);
-  if (grd === 8) {
+  let grads = 0;
+  grads += leftFun(37);
+  grads += upFun(40);
+  grads += downFun(38);
+  grads += rightFun(39);
+  if (grads === 8) {
     alert('Yes');
     const play = document.getElementById('play');
     const screen = document.getElementById('myCanvas');
@@ -67,66 +67,51 @@ submit.addEventListener('click', () => {
     });
   }
 });
-// const play = document.getElementById('play');
-// const screen = document.getElementById('myCanvas');
-// play.addEventListener('click', () => {
-//   screen.style.visibility = 'visible';
-// });
 
-// function Assessment() {
-//   let grd = 0;
-//   grd += leftFun(37);
-//   grd += upFun(40);
-//   grd += downFun(38);
-//   grd += rightFun(39);
-// }
 /* check input left true or false */
-function leftFun(rsl) {
-  let g = 0;
-  if (rsl == parseFloat(document.game.left.value)) {
-    g = 2; leftspan.innerHTML = '*';
+function leftFun(result) {
+  let gradLeft = 0;
+  if (result == parseFloat(document.game.left.value)) {
+    gradLeft = 2; leftspan.innerHTML = '*';
   } else {
 	      leftspan.style = 'color:red';
 	      leftspan.innerHTML = '*';
 	    }
-  return g;
+  return gradLeft;
 }
 /* check input right true or false */
-function rightFun(rsl) {
-  let g = 0;
-  if (rsl == parseFloat(document.game.right.value)) {
-	    g = 2;
+function rightFun(result) {
+  let gradRight = 0;
+  if (result == parseFloat(document.game.right.value)) {
+	    gradRight = 2;
     rightspan.innerHTML = '*';
   } else {
 	   rightspan.style = 'color:red';
 	   rightspan.innerHTML = '*';
   }
-  return g;
+  return gradRight;
 }
 /* check input up true or false */
-function upFun(rsl) {
-  let g = 0;
-  if (rsl == parseFloat(document.game.up.value)) {
-    g = 2;
+function upFun(result) {
+  let gradeUp = 0;
+  if (result == parseFloat(document.game.up.value)) {
+    gradeUp = 2;
     upspan.innerHTML = '*';
   } else {
     upspan.style = 'color:red';
     upspan.innerHTML = '*';
   }
-  return g;
+  return gradeUp;
 }
 /* check input down true or false */
-function downFun(rsl) {
-  let g = 0;
-  if (rsl == parseFloat(document.game.down.value)) {
-    g = 2;
+function downFun(result) {
+  let gradeDown = 0;
+  if (result == parseFloat(document.game.down.value)) {
+    gradeDown = 2;
     downspan.innerHTML = '*';
   } else {
     downspan.style = 'color:red';
     downspan.innerHTML = '*';
   }
-  return g;
-}
-function resetFun() {
-  location.reload();
+  return gradeDown;
 }
