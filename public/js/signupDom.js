@@ -12,7 +12,6 @@ if (signup) {
         email: email.value,
         password: username.value,
       };
-      console.log(user);
       fetch('/signup', {
         method: 'POST',
         headers: {
@@ -26,9 +25,10 @@ if (signup) {
             window.location.pathname = '/';
           }
         })
-        .catch(err => console.log(err));
+        .catch(err => window.location.pathname = '/error';
+);
     } else {
-      alert('correct your password');
+      alert('please write a correct password');
     }
   });
 }

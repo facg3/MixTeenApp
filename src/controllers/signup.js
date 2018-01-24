@@ -13,14 +13,12 @@ exports.post = (req, res) => {
   bcrypto.hashPassword(password).then((hashedPassword) => {
     user.addUser({ username, email, password: hashedPassword })
       .then((data) => {
-        const userData = {
-          id: data.rows[0].id,
-          username: data.rows[0].username,
-        };
+        const { id } = data.rows[0];
+        const userData = { id, username }
         const token = jwt.sign(userData, process.env.TOKEN_SECRET);
         res.cookie('token', token);
         res.json({ success: true, username: userData.username });
       })
-      .catch(err => console.log(err));
-  }).catch((err) => { console.log(err); });
+      .catch(err => res.json({ message: err }));
+  }).catch(err => res.json({ message: err }));
 };
