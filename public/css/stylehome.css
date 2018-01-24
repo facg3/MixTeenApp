@@ -22,9 +22,9 @@ body {
   height: 100%;
 }
 #main .container .video-background{
-position: absolute;
-top: 50%;
-left: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 #main .container .user-access {
   display: flex;
