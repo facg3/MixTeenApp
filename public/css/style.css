@@ -20,6 +20,7 @@ html, body {
   height: 90px;
   background-image: url("../images/img_general_avatar.e40ca637.png");
   background-size: contain;
+  margin-top: 40px;
 }
 
 .fluid-container {
