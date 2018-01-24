@@ -7,28 +7,27 @@ const routes = require('./controllers/index');
 
 const bodyparser = require('body-parser');
 
+const favicon = require('serve-favicon');
+
 const cookieParser = require('cookie-parser');
 
 const express = require('express');
 
 const app = express();
+module.exports = app
+  .use(bodyparser.json())
+  .use(bodyparser.urlencoded({ extended: false }))
 
-app.use(bodyparser.json());
-app.use(bodyparser.urlencoded({ extended: false }));
-
-app.use(express.static(path.join(__dirname, '..', 'public')));
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'hbs');
-app.engine('hbs', hbars({
-  extname: 'hbs',
-  layoutsDir: path.join(__dirname, 'views', 'layouts'),
-  partialsDir: path.join(__dirname, 'views', 'partials'),
-  defaultLayout: 'main',
-}));
-app.use(cookieParser());
-app.set('port', process.env.PORT || 4000);
-
-app.use(routes);
-
-
-module.exports = app;
+  .use(express.static(path.join(__dirname, '..', 'public')))
+  .set('views', path.join(__dirname, 'views'))
+  .set('view engine', 'hbs')
+  .engine('hbs', hbars({
+    extname: 'hbs',
+    layoutsDir: path.join(__dirname, 'views', 'layouts'),
+    partialsDir: path.join(__dirname, 'views', 'partials'),
+    defaultLayout: 'main',
+  }))
+  .use(favicon(path.join(__dirname, '..', 'public', 'images/icon.ico')))
+  .use(cookieParser())
+  .set('port', process.env.PORT || 4000)
+  .use(routes);

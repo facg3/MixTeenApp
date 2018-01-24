@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="description" content="Free Web for kids to learn coding in javascript and html and css">
@@ -9,7 +8,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KidsTeen</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  {{#unless game}}
   <link rel="stylesheet" href="/css/header.css">
+  {{/unless}}
+  <link rel="stylesheet" href="/css/login.css">
   {{#if home}}
     <link rel="stylesheet" href="/css/stylehome.css">
   {{/if}}
@@ -19,7 +21,27 @@
   {{#if levels}}
     <link rel="stylesheet" href="/css/stylelevel.css">
   {{/if}}
-  <link rel="stylesheet" href="/css/login.css">
+  {{#if home}}
+  <link rel="stylesheet" href="/css/stylehome.css">
+  {{/if}}
+  {{#if game}}
+  <link rel="stylesheet" href="/css/style.css">
+  {{/if}}
+  {{#if levels}}
+  <link rel="stylesheet" href="/css/stylelevel.css">
+  {{/if}}
+  {{#if about}}
+  <link rel="stylesheet" href="/css/about.css">
+  {{/if}}
+  {{#if contact}}
+  <link rel="stylesheet" href="/css/contact.css">
+  {{/if}}
+  {{#if tryAgain}}
+  <link rel="stylesheet" href="/css/tryAgain.css">
+  {{/if}}
+  {{#if congrate}}
+  <link rel="stylesheet" href="/css/congrate.css">
+  {{/if}}
 </head>
 
 <body>
@@ -29,5 +51,4 @@
   {{{body}}}
   <script type="text/javascript" src="/js/homeDom.js"></script>
 </body>
-
 </html>
