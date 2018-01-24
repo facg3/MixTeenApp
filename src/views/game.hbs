@@ -5,8 +5,8 @@
       </div>
       <div class="menu-container">
         <div class="m-item">
-          <a href="/"><i class="material-icons md-48">keyboard_backspace</i>
-      <div> الصفحة الرئيسة  </div>
+          <a href="/game"><i class="material-icons">account_circle</i>
+      <div> {{username}}  </div>
     </a>
         </div>
         <div class="m-item">
@@ -16,6 +16,10 @@
     </button>
         </div>
         <div class="m-item">
+          <a href="/logout">
+            {{>exit}}
+          <div> تسجيل خروج </div>
+          </a>
         </div>
       </div>
     </div>
@@ -133,7 +137,8 @@
                 <div class="question-infos">
                   <h1>
               <span>
-المستوى الأول              </span>
+                المستوى الأول
+              </span>
             </h1>
                 </div>
               </div>
