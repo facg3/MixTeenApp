@@ -37,7 +37,7 @@
   border-color: red;
 }
 
-.log_B {
+.log_button {
   width: 50%;
   border-bottom-right-radius: 12%;
   border-top-left-radius: 12%;
@@ -55,7 +55,7 @@
   margin-right: 2px;
   font-size: 18px
 }
-.log_B:active{
+.log_button:active{
   background-color: red;
 }
 .input_form {
