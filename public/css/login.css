@@ -81,6 +81,11 @@
 .log_input {
     width: 80%;
 }
+.log_input label{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 .but_form {
     margin-top: 1.5em;
 }
