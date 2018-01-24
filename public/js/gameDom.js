@@ -8,8 +8,8 @@ panelButton.addEventListener('click', () => {
   }
 });
 /* check input left */
-let left = document.getElementById('left'),
-  formLeft = document.getElementById('code');
+const left = document.getElementById('left');
+const formLeft = document.getElementById('code');
 left.addEventListener('input', (e) => {
   const codeLeft = left.value;
   if (codeLeft === '37') {
@@ -19,8 +19,8 @@ left.addEventListener('input', (e) => {
   }
 });
 /* check input down */
-let down = document.getElementById('down'),
-  formDown = document.getElementById('code');
+const down = document.getElementById('down');
+const formDown = document.getElementById('code');
 down.addEventListener('input', (e) => {
   const codeDown = down.value;
   if (codeDown === '38') {
@@ -29,9 +29,17 @@ down.addEventListener('input', (e) => {
     down.style.background = 'red';
   }
 });
+/* start game when finish code */
+const playGame = document.getElementById('play-game');
+playGame.addEventListener('click', () => {
+  const exitPop = document.getElementById('pop-up');
+  exitPop.style.visibility = 'hidden';
+  const screenGame = document.getElementById('myCanvas');
+  screenGame.style.visibility = 'visible';
+});
 /* check input right */
-let right = document.getElementById('right'),
-  formRight = document.getElementById('code');
+const right = document.getElementById('right');
+const formRight = document.getElementById('code');
 right.addEventListener('input', (e) => {
   const codeRight = right.value;
   if (codeRight === '39') {
@@ -41,8 +49,8 @@ right.addEventListener('input', (e) => {
   }
 });
 /* check input up */
-let up = document.getElementById('up'),
-  formUp = document.getElementById('code');
+const up = document.getElementById('up');
+const formUp = document.getElementById('code');
 up.addEventListener('input', (e) => {
   const codeUp = up.value;
   if (codeUp === '40') {
@@ -51,31 +59,35 @@ up.addEventListener('input', (e) => {
     up.style.background = 'red';
   }
 });
-/* function submit */
+/* when click submit check grade */
 const submit = document.getElementById('submit');
+let grads = 0;
 submit.addEventListener('click', () => {
-  let grads = 0;
   grads += leftFun(37);
   grads += upFun(40);
   grads += downFun(38);
   grads += rightFun(39);
   if (grads === 8) {
-    alert('Yes');
-    const play = document.getElementById('play');
-    const screen = document.getElementById('myCanvas');
-    play.addEventListener('click', () => {
-      screen.style.visibility = 'visible';
-    });
+    const congrate = document.getElementById('pop-up');
+    congrate.style.visibility = 'visible';
   } else {
-    alert('No');
-    const play = document.getElementById('play');
-    const screen = document.getElementById('myCanvas');
-    play.addEventListener('click', () => {
-      alert('try');
-    });
+    const tryAgain = document.getElementById('pop-down');
+    tryAgain.style.visibility = 'visible';
   }
 });
+/* show game with click play */
+const play = document.getElementById('play');
+const screen = document.getElementById('myCanvas');
+play.addEventListener('click', () => {
+  const Again = document.getElementById('pop-start');
+  Again.style.visibility = 'visible';
+});
 
+//  else {
+//   const Again = document.getElementById('pop-start');
+//   Again.style.visibility = 'visible';
+// }
+// });
 /* check input left true or false */
 function leftFun(result) {
   let gradLeft = 0;

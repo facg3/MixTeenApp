@@ -36,6 +36,86 @@
         </div>
       </div>
     </div>
+    <div class="pop-down" id="pop-down">
+        <div class="content-try">
+          <div class="try">
+            <div class="try-text">
+              <a href="/game">
+            <img class= "exit-try" src="images/exit.png" alt="Exit!">
+          </a>
+            </div>
+            <div class="text-try">
+              <h1 class="message-try">حــاول مجــددآ!!</h1>
+            </div>
+
+            <div class="gify-try">
+              <img src=" images/try.gif" alt="try"> </div>
+            <div class="buttons-try">
+              <a href="/game">
+            <img class= "exit-try" src="images/try.png" alt="next!">
+          </a>
+
+
+         </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="pop-start" id="pop-start">
+        <div class="content-start">
+
+          <div class="game-start">
+            <div class="text-start">
+              <a href="/game">
+            <img class= "exit-start" src="images/exit.png" alt="Exit!">
+          </a>
+            </div>
+            <div class="text-start">
+              <h1 class="message-start"> أكتب الكود أولا</h1>
+            </div>
+
+            <div class="gify-start">
+              <img src=" images/start.gif" alt="start"> </div>
+            <div class="buttons-start">
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    <div class="pop-up" id="pop-up">
+      <div class="content">
+
+        <div class="congrate">
+          <div class="congrate-text">
+            <a href="/game">
+          <img class= "exit" src="images/exit.png" alt="Exit!">
+        </a>
+          </div>
+          <div class="text">
+            <h1 class="message">  رائـــع لقد فــزت!!</h1>
+          </div>
+
+          <div class="gify">
+            <img src=" images/congrate.gif" alt="congrate"> </div>
+          <div class="buttons">
+            <a href="#">
+          <img class= "exit" id ="play-game" src="images/next.ico" alt="next!">
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://ibb.co/kMCXeG" target="_blank" rel="noopener">
+          <img class= "exit-try" src="images/face.png" alt="next!">
+      </a>
+            <a href="/images/level1.png" download>
+        <img class= "exit" src="images/screen.png" alt="screen!" value="download">
+        </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <!-- </div> -->
+
     <div class="left-column">
       <div class="main">
         <div class="ide-panel">
@@ -100,9 +180,7 @@
                         </svg>
                       </div>
 
-
-
-                      <p>لنبدأ وقت المرح ونحصل على عدد من النقاط سنتعلم كيف نحرك اللاعبين باستخدام الأكواد البرمجية الجميلة </p>
+                      <p>لنبدأ وقت المرح ونحصل على عدد من النقاط سنتعلم كيف نحرك اللاعبين باستخدام الأكواد البرمجية الجميلة  من خلال معرفة أكواد أزرار لوحة المفاتيح  التي تلعب من خلالها </p>
                       <ul class="list-item">
 
 
@@ -167,39 +245,21 @@
 
 
                     <h2 style="display:flex;justify-content:center; align-content:center;color:red;"> اكتب في المربعات الفارغة الكود المناسب </h2>
-
-                    <form id="code" name="game" action="JavaScript:Assessment()">
-                      if
-                      <tr>
-                        <td>( </td>
-                        <td><input type="text" name="left" id="left" required autocomplete="off" /></td>
-                        <td> in keycode)</td>
-                        <td>{hero.x -= hero.speed * modifier;}</td>
-                      </tr>
-                      <span id="leftspan" style="color:green"></span><br/> if
-                      <tr>
-                        <td>( </td>
-                        <td><input type="text" name="down" id="down" required required autocomplete="off" /></td>
-                        <td> in keycode)</td>
-                        <td>{hero.y -= hero.speed * modifier;}</td>
-                      </tr>
-                      <span id="downspan" style="color:green"></span><br/> if
-                      <tr>
-                        <td>( </td>
-                        <td><input type="text" name="right" id="right" required required autocomplete="off" /></td>
-                        <td> in keycode)</td>
-                        <td>{hero.x += hero.speed * modifier;}</td>
-                      </tr>
-                      <span id="rightspan" style="color:green"></span><br/> if
-                      <tr>
-                        <td> ( </td>
-                        <td><input type="text" name="up" id="up" required required autocomplete="off" /></td>
-                        <td> in keycode)</td>
-                        <td>{hero.y += hero.speed * modifier;}</td>
-                      </tr>
-                      <span id="upspan" style="color:green"></span><br/>
-                      <input type="submit" name="submit" id="submit" value="افحص الكود " />
-                    </form>
+                    <form  id = "code" name="game" action="JavaScript:Assessment()">
+       if<tr><td>( </td><td><input type="text" name="left" id="left"  autocomplete="off"/></td> <td> in keycode)</td>
+           <td>{hero.x -= hero.speed * modifier;}</td>  </tr>
+<span id="leftspan" style="color:green"></span><br/>
+ if<tr><td>(  </td><td><input type="text" name="down" id="down"  autocomplete="off"/></td> <td> in keycode)</td>
+           <td>{hero.y -= hero.speed * modifier;}</td>  </tr>
+<span id="downspan" style="color:green"></span><br/>
+if<tr><td>(  </td><td><input type="text" name="right" id="right" autocomplete="off"/></td> <td> in keycode)</td>
+           <td>{hero.x += hero.speed * modifier;}</td>  </tr>
+<span id="rightspan" style="color:green"></span><br/>
+if<tr><td> ( </td><td><input type="text" name="up" id="up"  autocomplete="off"/></td> <td> in keycode)</td>
+           <td>{hero.y += hero.speed * modifier;}</td>  </tr>
+<span id="upspan" style="color:green"></span><br/>
+      <input type="submit" name="submit" id="submit" value="افحص الكود " />
+   </form>
                   </div>
                 </div>
               </div>
