@@ -257,7 +257,7 @@ html, body {
 .panel .panel-container .panel-info h2 {
   text-align: center;
 }
-.panel .panel-container .p-item {
+.panel .panel-container .panel-item {
   width: 95%;
   height: 30px;
   margin-bottom: 4px;
@@ -267,7 +267,7 @@ html, body {
   justify-content: center;
   align-items: center;
 }
-.panel .panel-container .p-item a {
+.panel .panel-container .panel-item a {
   text-decoration: none;
   color: #1a99aa;
   font-weight: 400;
