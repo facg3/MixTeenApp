@@ -48,9 +48,8 @@ html, body {
 .m-item a div {
   text-align: center;
 }
-
 .m-item {
-  width: 100%;
+  width: 80px;
   height: 80px;
   min-height: 80px;
   display: flex;
@@ -203,7 +202,202 @@ html, body {
   text-align: right;
   border: 2px solid #ececec;
 }
+@import url(https://fonts.googleapis.com/css?family=Share+Tech);
+.pop-up{
+  direction: rtl;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  visibility: hidden;
+  justify-content: center;
+  background-color: grey;
+}
+.pop-up {
+	animation: pop 0.1s ease 0.2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	justify-content: center;
+	height: 0;
+	position: fixed;
+	overflow: hidden;
+	width: 100%;
+	z-index: 30;
+	.content {
+    align-self: center;
+		background-color: white;
+		padding: 100px;
+		width: 500px;}
+}
+.pop-start{
+  direction: rtl;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  visibility: hidden;
+  justify-content: center;
+  background-color: grey;
+}
+.pop-start {
+	animation: pop 0.3s ease 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	justify-content: center;
+	height: 0;
+	position: fixed;
+	overflow: hidden;
+	width: 100%;
+	z-index: 30;
+	.content {
+		align-self: center;
+		background-color: white;
+		padding: 100px;
+		width: 500px;	}
+}
+.game-start {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 40px;
+    border-style: solid;
+    border-color: #6eb120;
+    border-width: thick;
+}
+.exit-start{
+  height: 40px;
+  width: 40px;
+  padding: 20px;;
+}
+.gify-start{
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
+.buttons-start{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+.text-start{
+  display: flex;
+  justify-content: center;
+}
+.message-start{
+  text-align: center;
+  font-family:
+  color: #6eb120;
+}
+.congrate {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  border-radius: 40px;
+  border-style: solid;
+  border-color: #6eb120;
+  border-width: thick;
+}
+.exit{
+  height: 40px;
+  width: 40px;
+  padding: 20px;;
+}
+.gify{
+  display: flex;
+  justify-content: center;
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+.text{
+  display: flex;
+  justify-content: center;
+}
+.message{
+  text-align: center;
+  font-family:
+  color: #6eb120;
+}
+.pop-down {
+  direction: rtl;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: grey;
+  visibility: hidden;
+}
 
+@keyframes pop {
+	0% {
+		height: 0%;
+	}
+	50% {
+		height: 0%;
+	}
+	100% {
+		height: 100%;
+	}
+}
+@keyframes show-text {
+	0% {opacity: 0;}
+	50% {opacity: 0;}
+	100% {opacity: 1;}
+}
+.pop-down{
+	animation: pop 0.3s ease 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	justify-content: center;
+	height: 0;
+	position: fixed;
+	overflow: hidden;
+	width: 100%;
+	z-index: 30;
+	.content {
+		align-self: center;
+		background-color: white;
+		padding: 100px;
+		width: 500px;}
+}
+.try {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  border-radius: 40px;
+  border-style: solid;
+  border-color: crimson;
+  border-width: thick;
+}
+.exit-try {
+  height: 40px;
+  width: 40px;
+  padding: 20px;
+}
+.gify-try {
+  display: flex;
+  justify-content: center;
+}
+.buttons-try {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+.try-text {
+  display: flex;
+  justify-content: right;
+}
+.message-try {
+  text-align: center;
+  font-family: monospace;
+  color: red;
+}
 #ide-code-screen .container .left-block .larg-row .screen {
   width: 90%;
   height: 85%;
@@ -219,7 +413,6 @@ html, body {
   flex-direction: column;
   align-content: space-between;
 }
-
 #ide-code-screen .container .right-block #defaultContainer {
   width: 100%;
   height: 50%;
@@ -227,14 +420,12 @@ html, body {
   background-color: #fff;
   margin-bottom: 5px;
 }
-
 #ide-code-screen .container .right-block #drop {
   width: 100%;
   height: 47%;
   border: 2px solid gray;
   background-color: #fff;
 }
-
 .container .right-block #defaultContainer #block-1 {
   width: 80px;
   height: 80px;
