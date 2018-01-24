@@ -25,6 +25,6 @@ module.exports = app
     defaultLayout: 'main',
   }))
 
-  .set('port', process.env.PORT || 4000)
+  .set('port', process.env.PORT || 8080)
   .use(favicon(path.join(__dirname, '..', 'public', 'images/icon.ico')))
   .use(routes);

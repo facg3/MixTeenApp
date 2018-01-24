@@ -1,25 +1,15 @@
 BEGIN;
+DROP TABLE IF EXISTS posts CASCADE;
 
-
-CREATE TABLE IF NOT EXISTS levels(
-  level_id SERIAL PRIMARY KEY,
-  level_name VARCHAR(25) NOT NULL,
-  instruction VARCHAR(1000) NOT NULL
-
+CREATE TABLE posts (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(25) NOT NULL,
+  post VARCHAR(250) NOT NULL
 );
 
-INSERT INTO levels (level_name, instruction)
-  VALUES ('Level-1', 'Instruction Level One'),
-         ('Level-2', 'Instruction level Two'),
-         ('Level-3', 'Instruction level Three');
-
-CREATE TABLE IF NOT EXISTS comment(
-           id SERIAL PRIMARY KEY,
-           username VARCHAR(25) NOT NULL,
-           email VARCHAR(40) NOT NULL,
-           message VARCHAR(1000) NOT NULL
-         );
-  INSERT INTO comment (username, email,message)
-           VALUES ('Ismail', 'ismail12@gmail.com','website its very good');
+INSERT INTO posts (name, post)
+  VALUES ('Ismail', 'Test Post One'),
+         ('Walaa', 'Test Post Two'),
+         ('Marwa', 'Test Post Three');
 
 COMMIT;
