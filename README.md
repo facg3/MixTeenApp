@@ -1,6 +1,6 @@
 # MixTeen Code Gaming App
 
-![pic](/home/marwa/Documents/2/public/images/mxt-logo.png)  
+![pic](https://ibb.co/h8SqGw)  
 
 ## it's an application 💻 for teaching the Arab children 👦 👧 between 6 - 14 years  how to 'Code' through games 🎮  with an interesting way  😍
 ___
@@ -26,7 +26,7 @@ Good app :heart_eyes: , but UI needs some edits.
 
 ## Schema Diagram  📅
 
-![schema](/home/marwa/Documents/2/public/images/schema.png)
+![schema](https://ibb.co/cmvSww)
 
 ---
 
