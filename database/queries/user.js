@@ -1,7 +1,6 @@
 const db = require('../dbconnection');
 
 const addUser = user => new Promise((resolve, reject) => {
-  console.log('sdsds');
   const sql = {
     text: 'INSERT INTO users (username,email,password) VALUES ($1,$2,$3) RETURNING id,username',
     values: [user.username, user.email, user.password],
