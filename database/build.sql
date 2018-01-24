@@ -19,6 +19,12 @@ CREATE TABLE IF NOT EXISTS comment(
            email VARCHAR(40) NOT NULL,
            message VARCHAR(1000) NOT NULL
          );
+CREATE TABLE IF NOT EXISTS users(
+          id SERIAL PRIMARY KEY,
+          username VARCHAR(30) NOT NULL,
+          email VARCHAR(40) NOT NULL,
+          password VARCHAR(300) NOT NULL
+        );
   INSERT INTO comment (username, email,message)
            VALUES ('Ismail', 'ismail12@gmail.com','website its very good');
 

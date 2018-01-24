@@ -1,21 +1,25 @@
 <section id="game">
   <div class="fluid-container">
     <div class="menu">
-      <div class="menu-item avatar">
+      <div class="m-item avatar">
       </div>
       <div class="menu-container">
-        <div class="menu-item">
-          <a href="/"><i class="material-icons md-48">keyboard_backspace</i>
-      <div> الصفحة الرئيسة  </div>
+        <div class="m-item">
+          <a href="/game"><i class="material-icons">account_circle</i>
+      <div> {{username}}  </div>
     </a>
         </div>
-        <div class="menu-item">
+        <div class="m-item">
           <button id="levels" >
             <i class="material-icons">games</i>
       <div> المستويات </div>
     </button>
         </div>
-        <div class="menu-item">
+        <div class="m-item">
+          <a href="/logout">
+            {{>exit}}
+          <div> تسجيل خروج </div>
+          </a>
         </div>
       </div>
     </div>
@@ -53,7 +57,8 @@
                 <div class="question-infos">
                   <h1>
               <span>
-المستوى الأول              </span>
+                المستوى الأول
+              </span>
             </h1>
                 </div>
               </div>

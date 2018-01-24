@@ -1,19 +1,22 @@
-const express = require('express');
-
-const app = express();
 
 const hbars = require('express-handlebars');
 
 const path = require('path');
-const favicon = require('serve-favicon');
-const routes = require('./controllers');
+
+const routes = require('./controllers/index');
+
 const bodyparser = require('body-parser');
 
+const favicon = require('serve-favicon');
+
+const cookieParser = require('cookie-parser');
+
+const express = require('express');
+
+const app = express();
 module.exports = app
   .use(bodyparser.json())
-  .use(bodyparser.urlencoded({
-    extended: false,
-  }))
+  .use(bodyparser.urlencoded({ extended: false }))
 
   .use(express.static(path.join(__dirname, '..', 'public')))
   .set('views', path.join(__dirname, 'views'))
@@ -24,7 +27,7 @@ module.exports = app
     partialsDir: path.join(__dirname, 'views', 'partials'),
     defaultLayout: 'main',
   }))
-
-  .set('port', process.env.PORT || 4000)
   .use(favicon(path.join(__dirname, '..', 'public', 'images/icon.ico')))
+  .use(cookieParser())
+  .set('port', process.env.PORT || 4000)
   .use(routes);

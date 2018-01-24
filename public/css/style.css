@@ -13,11 +13,12 @@ html, body {
   margin: 0;
   padding: 0;
 }
-.menu-item.avatar {
+.m-item.avatar {
   width: 100%;
   height: 90px;
   background-image: url("../images/img_general_avatar.e40ca637.png");
   background-size: contain;
+  margin-top: 40px;
 }
 .fluid-container {
   width: 100%;
@@ -26,32 +27,42 @@ html, body {
   display: flex;
   flex: 1;
 }
-.menu-container {
+.m-container {
   height: calc(100% - 90px - 18px);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   color: #454c55;
 }
-.menu-item a {
+.m-item a {
   text-decoration: none;
   color: #454c55;
   text-align: center;
 }
-.menu-item #levels {
+.m-item #levels {
   color: #454c55;
   text-align: center;
+  width: 100%;
+  height: 100%;
 }
-.menu-item a div {
+.m-item a div {
   text-align: center;
 }
-.menu-item {
-  width: 80px;
+
+.m-item {
+  width: 100%;
   height: 80px;
   min-height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: beige;
+  border-bottom-left-radius: 3px;
+  margin-bottom: 8px;
+  border-top-left-radius: 8px;
+}
+.m-item:active {
+  background-color: #1a99aa;
 }
 .left-column {
   display: flex;
@@ -88,7 +99,7 @@ html, body {
 }
 .container {
   width: 100%;
-  min-width: 1150px;
+  max-width: 1180px;
   height: 100%;
 }
 .main .ide-panel .inner-main .ide-header .container {
@@ -244,9 +255,9 @@ html, body {
   padding:20px;
 }
 .panel .panel-container .panel-info h2 {
-text-align: center;
+  text-align: center;
 }
-.panel .panel-container .p-item {
+.panel .panel-container .panel-item {
   width: 95%;
   height: 30px;
   margin-bottom: 4px;
@@ -256,7 +267,7 @@ text-align: center;
   justify-content: center;
   align-items: center;
 }
-.panel .panel-container .p-item a {
+.panel .panel-container .panel-item a {
   text-decoration: none;
   color: #1a99aa;
   font-weight: 400;
@@ -323,20 +334,7 @@ text-align: center;
   margin: 3px;
   height: 6px;
 }
-.dragcodeIdss{
-  font-family: "Tahoma";
-  color: #1C94C4;
-  text-align: center;
-  list-style: none;
-  width: 90px;
-  padding: 3px;
-  margin: 3px;
-  height: 6px;
-}
-#game{
- margin: 4px;
- padding-left: 5px;
-}
+
 .title{
  display:flex;
  justify-content:center;

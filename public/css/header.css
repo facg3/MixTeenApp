@@ -24,12 +24,13 @@ header .container {
 header .container .logo {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 20%;
   align-items: flex-start;
+  height: inherit;
 }
-header .container .logo h1{
-  margin-top: 0;
-  margin-bottom: 0;
+header .container .logo img{
+  width: 100%;
+  height: 100%;
 }
 header nav {
   display: flex;
@@ -55,7 +56,7 @@ header nav .item a {
 }
 
 header nav .item a i{
-  background-color: #f7a618;
+  background-color: #3b3f51;
   width: 40px;
   height: 40px;
   color: #fff;
@@ -86,7 +87,7 @@ body > header .burger-btn{
   outline: none;
 }
 @media screen and (max-width:768px){
-  body > header .burger-btn{
+body > header .burger-btn{
     display: block;
   }
   .container {
@@ -94,7 +95,7 @@ body > header .burger-btn{
     max-width: 1200px;
     width: 100%;
   }
-  header .container nav {
+header .container nav {
     display: flex;
     flex-direction: column-reverse;
     position: absolute;
@@ -106,22 +107,22 @@ body > header .burger-btn{
   .space-box {
     display: none;
   }
-  header .container nav .item{
+header .container nav .item{
     width: 100%;
     height: 60px;
     display: inline-block;
   }
 
-  header nav .item a{
+header nav .item a{
   flex-direction: row-reverse;
 }
 .active{
   display: block;
 }
-  header nav:not(.active){
+header nav:not(.active){
   display: none;
 }
-  header .container .burger-btn{
+header .container .burger-btn{
   width: 55px;
   display: block;
   background:none;
