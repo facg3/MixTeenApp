@@ -8,6 +8,10 @@ body {
   font-weight: 300;
   color: #fff;
   font-family: 'Lato', Calibri, Arial, sans-serif;
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  overflow-y: hidden;
 }
 
 #main {
@@ -70,16 +74,8 @@ body {
 #main .container .st-button:active {
 background-color: #1a99aa;
 }
-footer {
-  color: #fff;
-  width: 100%;
-  position: absolute;
-  bottom: 19px;
-  left: 500;
-  DISPLAY: FLEX;
-  flex-direction: row;
-  justify-content: center;
-  font-weight: 400;
+#myVideo{
+  width:100%;
 }
 @media screen and (max-width:768px) {
 #main .container .user-access {

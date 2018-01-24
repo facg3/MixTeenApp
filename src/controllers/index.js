@@ -11,9 +11,10 @@ const levels = require('./levels');
 const congrate = require('./congrate');
 const contact = require('./contact');
 const about = require('./about');
+const error = require('./error');
 
 
-router
+module.exports=router
   .get('/', home.get)
   .post('/signup', signup.post)
   .get('/game', game.get)
@@ -25,6 +26,7 @@ router
   .get('/congrate', congrate.get)
   .get('/contact', contact.get)
   .get('/levels', levels.get)
-  .get('/about', about.get);
+  .get('/about', about.get)
+  .get('/error', error.get);
 
-module.exports = router;
+
