@@ -9,37 +9,19 @@ ___
 # Why 🙋  
 ## Proplem : 
 
-When we thought of a site idea we searched for sites that teach children programming and we studied them and we read the comments that want parents to be and suffer from them
-Such as Scratch and wanted most parents to have clear learning to walk the child
-Such as Kodable was lacking for the Arabic language
-Some people have asked for a simple site where children can easily navigate
-It is easy to play and learn 
+Lack of resources to teach children programming in Arabic
+  
+## Solution :  
 
-* Important reasons for learning Programming for children:  
-
-   1- Coding is the future.  
-   2- Creative Thinking.  
-   3- Solve Problems.  
-   4- Courage to try new things.  
-
-## Solution :
-We thought of a simple solution that attracted children to programming in a fun and interested way
-Enjoy learning programming and at the same time enjoy the game
-They will play it through the code they write.
+We thought of a simple solution that attracted children to programming in a fun and interesting way
 
 ___ 
 
 # what 🙋 
 
---- 
+
 ## User Story
-The site is 6 pages 👉
-1- page home
-2- page game
-3. Sign Up
-4. Sign in
-5- page contact
-6- page about
+[Our App]()
 
 #### Home 
 
@@ -82,11 +64,7 @@ Conversation, learning and playing
 
 ___
 
-## User Testing :  
 
-* The result : Good app :heart_eyes: , but UI needs some edits.
-
-___
 
 
 
@@ -95,11 +73,7 @@ ___
 
 # How 🙋
 
-## Use this project  ✌️
-
-* our Page :in [heroku]()
-
-* our project : in local machine 💻
+## Use this project in local machine 💻
 
 ###### * Clone the repo:  
 
