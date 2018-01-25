@@ -1,3 +1,24 @@
+/* exit  popgame */
+const firstpop = document.getElementById('firstpop');
+const popExit1 = document.getElementById('popExit1');
+popExit1.addEventListener('click', () => {
+  firstpop.style.visibility = 'hidden';
+});
+const secondpop = document.getElementById('secondpop');
+const popExit2 = document.getElementById('popExit2');
+popExit2.addEventListener('click', () => {
+  secondpop.style.visibility = 'hidden';
+});
+const thirdpop = document.getElementById('thirdpop');
+const popExit3 = document.getElementById('popExit3');
+popExit3.addEventListener('click', () => {
+  thirdpop.style.visibility = 'hidden';
+});
+const fourthpop = document.getElementById('fourthpop');
+const popExit4 = document.getElementById('popExit4');
+popExit4.addEventListener('click', () => {
+  fourthpop.style.visibility = 'hidden';
+});
 const panelButton = document.getElementById('levels');
 panelButton.addEventListener('click', () => {
   const panel = document.querySelector('.panel');

@@ -5,8 +5,8 @@
       </div>
       <div class="m-container">
         <div class="m-item">
-          <a href="/"><i class="material-icons md-48">keyboard_backspace</i>
-      <div> الصفحة الرئيسة  </div>
+          <a href="/game"><i class="material-icons">account_circle</i>
+       <div> {{username}}  </div>
     </a>
         </div>
         <div class="m-item">
@@ -41,52 +41,52 @@
       </div>
     </div>
     <div class="pop-down" id="pop-down">
-        <div class="content-try">
-          <div class="try">
-            <div class="try-text">
-              <a href="/game">
+      <div class="content-try">
+        <div class="try">
+          <div class="try-text">
+            <a href="/game">
             <img class= "exit-try" src="images/exit.png" alt="Exit!">
           </a>
-            </div>
-            <div class="text-try">
-              <h1 class="message-try">حــاول مجــددآ!!</h1>
-            </div>
+          </div>
+          <div class="text-try">
+            <h1 class="message-try">حــاول مجــددآ!!</h1>
+          </div>
 
-            <div class="gify-try">
-              <img src=" images/try.gif" alt="try"> </div>
-            <div class="buttons-try">
-              <a href="/game">
+          <div class="gify-try">
+            <img src=" images/try.gif" alt="try"> </div>
+          <div class="buttons-try">
+            <a href="/game">
             <img class= "exit-try" src="images/try.png" alt="next!">
           </a>
 
 
-         </div>
-
           </div>
+
         </div>
       </div>
-      <div class="pop-start" id="pop-start">
-        <div class="content-start">
+    </div>
+    <div class="pop-start" id="pop-start">
+      <div class="content-start">
 
-          <div class="game-start">
-            <div class="text-start">
-              <a href="/game">
+        <div class="game-start">
+          <div class="text-start">
+            <a href="/game">
             <img class= "exit-start" src="images/exit.png" alt="Exit!">
           </a>
-            </div>
-            <div class="text-start">
-              <h1 class="message-start"> أكتب الكود أولا</h1>
-            </div>
+          </div>
+          <div class="text-start">
+            <h1 class="message-start"> أكتب الكود أولا</h1>
+          </div>
 
-            <div class="gify-start">
-              <img src=" images/start.gif" alt="start"> </div>
-            <div class="buttons-start">
-            </div>
-
+          <div class="gify-start">
+            <img src=" images/start.gif" alt="start"> </div>
+          <div class="buttons-start">
           </div>
 
         </div>
+
       </div>
+    </div>
     <div class="pop-up" id="pop-up">
       <div class="content">
 
@@ -106,7 +106,7 @@
             <a href="#">
           <img class= "exit" id ="play-game" src="images/next.ico" alt="next!">
         </a>
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https://ibb.co/kMCXeG" target="_blank" rel="noopener">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://ibb.co/kMCXeG" target="_blank" rel="noopener">
           <img class= "exit-try" src="images/face.png" alt="next!">
       </a>
             <a href="/images/level1.png" download>
@@ -118,8 +118,6 @@
 
       </div>
     </div>
-    <!-- </div> -->
-
     <div class="left-column">
       <div class="main">
         <div class="ide-panel">
@@ -138,7 +136,8 @@
                 <div class="question-infos">
                   <h1>
               <span>
-المستوى الأول              </span>
+                المستوى الأول
+              </span>
             </h1>
                 </div>
               </div>
@@ -151,10 +150,10 @@
 
                       <div class="screen">
 
-                        <div class='popup'>
-                          <div>رابعآ : هيآ لنبدأ اللعب </div>
-                          <svg height="50" width="100">
-                            <path d="M0 50 L40 0 L65 0 Z" />
+                        <div class='popup' id="fourthpop">
+                          <button id="popExit4" type="button" name="button">اغلاق</button>
+                          <svg class="svg" height="50" width="200">
+                            <text x="0" y="15" fill="red" transform="rotate(0 10,10)"> 👍 الخطوة الرابعة والأخيرة 👍</text>
                             Sorry, your browser does not support inline SVG.
                           </svg>
                         </div>
@@ -176,15 +175,14 @@
                         <h2>الهدف</h2>
                       </div>
 
-                      <div class='popup'>
-                        <div> أولا : إقرأ التعليمات جيدآ لتتعرف على الهدف من هذه المرحلة</div>
-                        <svg height="50" width="100">
-                          <path d="M0 50 L40 0 L65 0 Z" />
-                          Sorry, your browser does not support inline SVG.
-                        </svg>
-                      </div>
+                      <div class='popup' id="firstpop">
+                        <button id="popExit1" type="button" name="button"> اغلاق </button>
+                        <svg height="70" width="120">
+    <text x="0" y="15" fill="red" transform="rotate(0 10,10)">☝️ الخطوة الأولى</text>
+    Sorry, your browser does not support inline SVG.
+  </svg> </div>
 
-                      <p>لنبدأ وقت المرح ونحصل على عدد من النقاط سنتعلم كيف نحرك اللاعبين باستخدام الأكواد البرمجية الجميلة  من خلال معرفة أكواد أزرار لوحة المفاتيح  التي تلعب من خلالها </p>
+                      <p>لنبدأ وقت المرح ونحصل على عدد من النقاط سنتعلم كيف نحرك اللاعبين باستخدام الأكواد البرمجية الجميلة من خلال معرفة أكواد أزرار لوحة المفاتيح التي تلعب من خلالها </p>
                       <ul class="list-item">
                         <li class="instruction"> x :تعني حركة أفقية </li>
                         <li class="instruction"> y :تعني حركة عمودية</li>
@@ -197,44 +195,78 @@
                 </div>
 
                 <div class="right-block">
-                  <div id="defaultContainer" class="block" o>
-                  <h2 class="title" >تتبع معنا </h2>
-                   <ul class="dragcode">
-                     <li class="dragcodeId" >37</li>
-                     <li class="dragcodeId" >38</li>
-                     <li class="dragcodeId" >39</li>
-                     <li class="dragcodeId" >40</li>
-                   </ul>
-                   <ul class="dragcode">
-	                   <li class="dragcodeIds" ><img src="/images/left.png" width="20" height="20"></li>
-                     <li class="dragcodeIds" ><img src="/images/down.png" width="20" height="20"></li>
-                     <li class="dragcodeIds" > <img src="/images/right.png" width="20" height="20"></li>
-                     <li class="dragcodeIds" > <img src="/images/up.png" width="20" height="20"></li>
-                  </ul>
-                  <ul class="dragcode">
-                       <li class="dragcodeIds" >سنرجع خطوات لليسار على مستوى x الخط الأفقي</li>
-                       <li class="dragcodeIds" > سنرجع خطوات للخلف على مستوى y الخط العمودي </li>
-                       <li class="dragcodeIds" > نتقدم خطوات لليمين على مستوى x الخط الأفقي </li>
-                       <li class="dragcodeIds" > نتقدم خطوات للأمام على مستوى y الخط العمودي</li>
-                  </ul>
-                </div>
-                  <div id="drop" class="block-code" >
-                    <h2 > اكتب في المربعات الفارغة الكود المناسب </h2>
-                    <form  id = "code" name="game" action="JavaScript:Assessment()">
+                  <div id="defaultContainer" class="block">
+                    <div class='popup' id="secondpop">
+                      <button type="button" id="popExit2" name="button">التالي</button>
+                      <svg height="70" width="120">
+  <text x="0" y="15" fill="red" transform="rotate(0 10,10)" > 👈  الخطوة الثآنية </text>
+  Sorry, your browser does not support inline SVG.
+</svg>
+                    </div>
+                    <h2 class="title">تتبع معنا </h2>
+                    <ul class="dragcode">
+                      <li class="dragcodeId">37</li>
+                      <li class="dragcodeId">38</li>
+                      <li class="dragcodeId">39</li>
+                      <li class="dragcodeId">40</li>
+                    </ul>
+                    <ul class="dragcode">
+                      <li class="dragcodeIds"><img src="/images/if_direction_left.png" width="20" height="20"></li>
+                      <li class="dragcodeIds"><img src="/images/if_direction_down.png" width="20" height="20"></li>
+                      <li class="dragcodeIds"> <img src="/images/if_direction_right.png" width="20" height="20"></li>
+                      <li class="dragcodeIds"> <img src="/images/if_direction_up.png" width="20" height="20"></li>
+                    </ul>
+                    <ul class="dragcode">
+                      <li class="dragcodeIds">سنرجع خطوات لليسار على مستوى x الخط الأفقي</li>
+                      <li class="dragcodeIds"> سنرجع خطوات للخلف على مستوى y الخط العمودي </li>
+                      <li class="dragcodeIds"> نتقدم خطوات لليمين على مستوى x الخط الأفقي </li>
+                      <li class="dragcodeIds"> نتقدم خطوات للأمام على مستوى y الخط العمودي</li>
+                    </ul>
+                  </div>
+                  <div id="drop" class="block-code">
+                    <div class='popup' id="thirdpop">
+                      <button type="button" id="popExit3" name="button">التالي</button>
+                      <svg height="70" width="120">
+  <text x="0" y="15" fill="red" transform="rotate(0 10,10)"> 👌  الخطوة الثآلثة</text>
+  Sorry, your browser does not support inline SVG.
+</svg>
+                    </div>
 
-    <span class="code-info"> if</span>  <tr><td>( </td><td><input type="text" name="left" id="left" required autocomplete="off"/></td> <td> <span class="code-info">in keycode</span>)</td>
-           <td>{<span class="code-info-o">hero.x -= hero.speed * modifier;</span>}</td>  </tr>
-<span id="leftspan" style="color:green"></span><br/>
- <span class="code-info">if</span><tr><td>(  </td><td><input type="text" name="down" id="down" required required autocomplete="off"/> <span class="code-info">in keycode</span>)</td>
-           <td>{<span class="code-info-o">hero.y -= hero.speed * modifier;}</span></td>  </tr>
-<span id="downspan" style="color:green"></span><br/>
-<span class="code-info">if</span><tr><td>(  </td><td><input type="text" name="right" id="right" required required autocomplete="off"/></td> <td> <span class="code-info">in keycode</span>)</td>
-           <td>{<span class="code-info-o">hero.x += hero.speed * modifier;</span>}</td>  </tr>
-<span id="rightspan" style="color:green"></span><br/>
-<span class="code-info">if</span><tr><td> ( </td><td><input type="text" name="up" id="up" required required autocomplete="off"/></td> <td> <span class="code-info">in keycode</span>)</td>
-           <td>{<span class="code-info-o">hero.y += hero.speed * modifier;</span>}</td>  </tr>
-<span id="upspan" style="color:green"></span><br/>
- </form>
+                    <h2> اكتب في المربعات الفارغة الكود المناسب </h2>
+                    <form id="code" name="game" action="JavaScript:Assessment()">
+
+                      <span class="code-info"> if</span>
+                      <tr>
+                        <td>( </td>
+                        <td><input type="text" name="left" id="left" required autocomplete="off" /></td>
+                        <td> <span class="code-info">in keycode</span>)</td>
+                        <td>{<span class="code-info-o">hero.x -= hero.speed * modifier;</span>}</td>
+                      </tr>
+                      <span id="leftspan" style="color:green"></span><br/>
+                      <span class="code-info">if</span>
+                      <tr>
+                        <td>( </td>
+                        <td><input type="text" name="down" id="down" required required autocomplete="off" /> <span class="code-info">in keycode</span>)</td>
+                        <td>{<span class="code-info-o">hero.y -= hero.speed * modifier;}</span></td>
+                      </tr>
+                      <span id="downspan" style="color:green"></span><br/>
+                      <span class="code-info">if</span>
+                      <tr>
+                        <td>( </td>
+                        <td><input type="text" name="right" id="right" required required autocomplete="off" /></td>
+                        <td> <span class="code-info">in keycode</span>)</td>
+                        <td>{<span class="code-info-o">hero.x += hero.speed * modifier;</span>}</td>
+                      </tr>
+                      <span id="rightspan" style="color:green"></span><br/>
+                      <span class="code-info">if</span>
+                      <tr>
+                        <td> ( </td>
+                        <td><input type="text" name="up" id="up" required required autocomplete="off" /></td>
+                        <td> <span class="code-info">in keycode</span>)</td>
+                        <td>{<span class="code-info-o">hero.y += hero.speed * modifier;</span>}</td>
+                      </tr>
+                      <span id="upspan" style="color:green"></span><br/>
+                    </form>
                   </div>
                   <input type="submit" name="submit" id="submit" value="افحص الكود " />
                 </div>
