@@ -1,6 +1,6 @@
 # MixTeen Code Gaming App 🎮
 
-### "Everyone should learn how to program a computer, because it teaches you how to think." Steve Jobs
+### "Everyone should learn how to program a computer, because it teaches you how to think." Steve Jops  
 
 ![pic](https://github.com/facg3/MixTeenApp/blob/master/public/images/mxt-logo.png)
 
@@ -48,8 +48,7 @@ And also if it is an error we give it another try
 simple form to contact with us and take a feedback from them and we join our app with social media [facebook](https://www.facebook.com/MixTeen-161684127804201/) [tweeter](https://twitter.com/mixteen2018) [google+](https://plus.google.com/u/0/107981716703962803784) 
 
 #### About
-
-* We are MixTeen Team  🚺 🚹 🚺
+ about  MixTeen Team  Developer 🚺 🚹 🚺 
 
 [Marwa](https://github.com/MarwaBj)  
 
@@ -58,17 +57,13 @@ simple form to contact with us and take a feedback from them and we join our app
 [Nadia](https://github.com/NadiaKhatib)
 
 
-*** We did a chat page so the kids talked to each other but we did not finish them
+___
+
+* We did a chat page so the kids talked to each other but we did not finish them
 Thus, through this site we can find what attracts children:
 Conversation, learning and playing
 
 ___
-
-
-
-
-
-
 
 
 # How 🙋
