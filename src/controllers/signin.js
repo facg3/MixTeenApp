@@ -23,7 +23,7 @@ exports.post = (req, res) => {
             const token = jwt.sign(userData, process.env.TOKEN_SECRET);
             res.cookie('token', token);
             res.json({ success: true, username: userData.username, login: true });
-          } else res.json({ massege: 'password is wrong' });
+          } else res.json({ message: 'password is wrong' });
         })
         .catch((error) => { if (error)res.render('signin'); });
     } else {

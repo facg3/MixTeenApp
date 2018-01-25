@@ -11,14 +11,15 @@ const levels = require('./levels');
 const congrate = require('./congrate');
 const contact = require('./contact');
 const about = require('./about');
-
+const schem = require('./schem');
+const { celebrate } = require('celebrate');
 
 router
   .get('/', home.get)
-  .post('/signup', signup.post)
+  .post('/signup', celebrate(schem.usersignup), signup.post)
   .get('/game', game.get)
   .get('/signin', signin.get)
-  .post('/signin', signin.post)
+  .post('/signin', celebrate(schem.usersignin), signin.post)
   .get('/signup', signup.get)
   .get('/logout', logout.get)
   .get('/tryAgain', tryAgain.get)

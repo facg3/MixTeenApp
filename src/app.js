@@ -12,6 +12,7 @@ const favicon = require('serve-favicon');
 const cookieParser = require('cookie-parser');
 
 const express = require('express');
+const { errors } = require('celebrate');
 
 const app = express();
 module.exports = app
@@ -30,4 +31,5 @@ module.exports = app
   .use(favicon(path.join(__dirname, '..', 'public', 'images/icon.ico')))
   .use(cookieParser())
   .set('port', process.env.PORT || 4000)
-  .use(routes);
+  .use(routes)
+  .use(errors());

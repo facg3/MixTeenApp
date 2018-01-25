@@ -14,11 +14,13 @@ exports.post = (req, res) => {
     user.addUser({ username, email, password: hashedPassword })
       .then((data) => {
         const { id } = data.rows[0];
-        const userData = { id, username }
+        const userData = { id, username };
         const token = jwt.sign(userData, process.env.TOKEN_SECRET);
         res.cookie('token', token);
         res.json({ success: true, username: userData.username });
       })
-      .catch(err => res.json({ message: err }));
-  }).catch(err => res.json({ message: err }));
+      .catch(err => res.status(400).json({ message: 'user is exist' }));
+  }).catch((err) => {
+    res.status(400).render('/error', { err });
+  });
 };
