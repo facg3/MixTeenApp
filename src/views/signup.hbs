@@ -1,5 +1,5 @@
-<div class="form-container">
   <section id="sp_form">
+    <div class="form-container">
     <form>
       <div class="input_form">
         <div class="log_ico">
@@ -7,7 +7,7 @@
         </div>
         <div class="log_input">
           <label> اسم المستخدم</label>
-          <input id="username" class="input_box" type="text" name="name" autocomplete="off" required>
+          <input id="username" class="input_box" type="text" name="name"  autocomplete="off" pattern="^[a-z\d\.]{5,}$" required>
         </div>
       </div>
       <div class="input_form">
@@ -16,7 +16,9 @@
         </div>
         <div class="log_input">
           <label> الايميل</label>
-          <input id="email" class="input_box" type="email" name="name" autocomplete="off" required>
+          <!--  -->
+          <input id="email" class="input_box" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"  name="name" data-value-missing= "Translate('Required')"
+  pattern="\d{13,16}" data-pattern-mismatch= "Translate('Invalid credit card')" autocomplete="off" required>
         </div>
       </div>
       <div class="input_form">
@@ -25,7 +27,7 @@
         </div>
         <div class="log_input">
           <label>  كلمة السر</label>
-          <input id="password" class="input_box" type="password" name="name" autocomplete="off" required>
+          <input id="password" class="input_box" type="password" name="name" pattern="^.{4,8}$" autocomplete="off" required>
         </div>
       </div>
       <div class="input_form">
@@ -43,6 +45,6 @@
         </div>
       </div>
     </form>
+  </div>
   </section>
-</div>
 <script type="text/javascript" src="/js/signupDom.js"></script>

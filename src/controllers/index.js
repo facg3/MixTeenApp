@@ -11,21 +11,22 @@ const levels = require('./levels');
 
 const contact = require('./contact');
 const about = require('./about');
+
+const schem = require('./schem');
+const { celebrate } = require('celebrate');
 const error = require('./error');
 
 
-module.exports=router
+module.exports = router
   .get('/', home.get)
-  .post('/signup', signup.post)
+  .post('/signup', celebrate(schem.usersignup), signup.post)
   .get('/game', game.get)
   .get('/signin', signin.get)
-  .post('/signin', signin.post)
+  .post('/signin', celebrate(schem.usersignin), signin.post)
   .get('/signup', signup.get)
   .get('/logout', logout.get)
-
   .get('/contact', contact.get)
   .get('/levels', levels.get)
   .get('/about', about.get)
-  .get('/error', error.get);
-
-
+  .get('/error', error.client)
+  .get('/error', error.server);

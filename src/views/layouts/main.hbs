@@ -44,9 +44,11 @@
 <body>
   {{#unless game}}
     {{>header}}
-     {{>footer}}
   {{/unless}}
-  {{{body}}} {{>footer}}
+  {{{body}}}
+  {{#unless game}}
+  {{>footer}}
+  {{/unless}}
   <script type="text/javascript" src="/js/homeDom.js"></script>
 </body>
 

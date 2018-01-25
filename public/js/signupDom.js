@@ -1,4 +1,20 @@
 const signup = document.getElementById('signup');
+const validate = function (data) {
+  const div = document.createElement('div');
+  div.classList.add('valid');
+  const node = document.createTextNode(data);
+  div.appendChild(node);
+  const container = document.getElementById('sp_form');
+  container.insertBefore(div, container.firstChild);
+};
+const checkdiv = function (data) {
+  if (document.querySelector('.valid')) {
+    document.querySelector('.valid').remove();
+    validate(data);
+  } else {
+    validate(data);
+  }
+};
 if (signup) {
   signup.addEventListener('click', (e) => {
     e.preventDefault();
@@ -23,12 +39,17 @@ if (signup) {
         .then((data) => {
           if (data.success) {
             window.location.pathname = '/';
+          } else {
+            checkdiv(data.message);
           }
         })
-        .catch(err => window.location.pathname = '/error';
-);
+        .catch((err) => {
+          if (err) {
+            window.location.pathname = '/error';
+          }
+        });
     } else {
-      alert('please write a correct password');
+      checkdiv('please write a correct password');
     }
   });
 }

@@ -1,4 +1,15 @@
-exports.get = (req, res) => {
-  res.render('error', { error: true });
+exports.client = (req, res) => {
+  res.status(404).render('error', {
+    layout: 'error',
+    statusCode: 404,
+    errorMessage: 'Page not found',
+  });
 };
 
+exports.server = (err, req, res) => {
+  res.status(500).render('error', {
+    layout: 'error',
+    statusCode: 500,
+    errorMessage: 'Internal server error',
+  });
+};

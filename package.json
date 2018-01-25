@@ -4,7 +4,7 @@
   "description": "it's an application for teaching the children how to code through games",
   "main": "index.js",
   "scripts": {
-    "start": "node src",
+    "start": "node src/index.js",
     "start:watch": "nodemon src/index.js",
     "test": "tape database/test/database.js",
     "test:router": "tape src/test/testRouter.js"
@@ -36,6 +36,7 @@
       "tape": "^4.8.0",
       "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.2",
+    "celebrate": "^7.0.4",
     "cookie-parser": "^1.4.3",
     "env2": "^2.2.0",
     "express": "^4.16.2",
