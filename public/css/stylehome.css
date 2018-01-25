@@ -11,9 +11,16 @@ body {
 }
 
 #main {
-  height: 100%
+  height: 100%;
+  position: relative;
 }
-
+#myVideo {
+  width: 100%;
+}
+.video-container {
+  width: 100%;
+  height: 100%;
+}
 #main .container {
   display: flex;
   flex-direction: column;
@@ -22,17 +29,20 @@ body {
   height: 100%;
 }
 #main .container .video-background{
-  position: absolute;
-  top: 50%;
-  left: 50%;
+position: absolute;
+top: 50%;
+left: 50%;
 }
 #main .container .user-access {
   display: flex;
   width: 100%;
   height: 150px;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 40%;
 }
+
 #main .container .user-access .usr-signin,
 #main .container .user-access .usr-signup {
   width: 250px;
@@ -86,5 +96,29 @@ footer {
   flex-direction: column;
   justify-content: space-evenly;
 }
-
+#main {
+  margin: 0;
+  padding: 0;
+}
+#main .container{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+#main video{
+  width: 1120px;
+  height: 630px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+}
 }

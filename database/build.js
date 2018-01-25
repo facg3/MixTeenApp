@@ -7,7 +7,7 @@ fs.readFileSync(path.join(__dirname, '/build.sql'), (error, sql) => {
     if (err) {
       throw new Error('There is an Error in SQL statment $ {err}');
     } else {
-      console.log(res);// eslint-disable-line
+      console.log(res);
     }
   });
 });
