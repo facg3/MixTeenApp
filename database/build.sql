@@ -21,9 +21,9 @@ CREATE TABLE IF NOT EXISTS comment(
          );
 CREATE TABLE IF NOT EXISTS users(
           id SERIAL PRIMARY KEY,
-          username VARCHAR(30) NOT NULL,
+          username VARCHAR(30)  NOT NULL UNIQUE,
           email VARCHAR(40) NOT NULL,
-          password VARCHAR(300) NOT NULL
+          password text NOT NULL
         );
   INSERT INTO comment (username, email,message)
            VALUES ('Ismail', 'ismail12@gmail.com','website its very good');
