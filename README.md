@@ -88,11 +88,8 @@ ___
 
 ___
 
-## Schema Diagram  📅
 
-![schema](https://github.com/facg3/MixTeenApp/blob/master/public/images/schema.png)
 
----
 
 
 
