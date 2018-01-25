@@ -1,5 +1,5 @@
-<div class="form-container ">
   <section id="sp_form">
+    <div class="form-container ">
     <form>
       <div class="input_form">
         <div class="log_ico">
@@ -7,7 +7,7 @@
         </div>
         <div class="log_input">
           <label> الاسم او اللقب</label>
-          <input id="username" type="text" class="input_box" value="" name="username" autocomplete="off" required>
+          <input id="username" type="text" class="input_box" value="" name="username" pattern="^[a-z\d\.]{5,}$" autocomplete="off" required>
         </div>
       </div>
       <div class="input_form">
@@ -16,7 +16,7 @@
       </div>
         <div class="log_input">
           <label> كلمة السر</label>
-          <input id="password" class="input_box" type="password" value="" name="password" autocomplete="off" required>
+          <input id="password" class="input_box" type="password" value="" name="password" autocomplete="off" pattern="^.{4,8}$" required>
         </div>
       </div>
       <div class="but_form">
@@ -25,6 +25,6 @@
         </div>
       </div>
     </form>
+  </div>
   </section>
-</div>
 <script type="text/javascript" src="/js/signinDom.js"></script>
