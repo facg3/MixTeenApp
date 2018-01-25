@@ -84,62 +84,57 @@
                       <div class="title">
                       <h2>الهدف</h2>
                       </div>
-
                       <p>لنبدأ وقت المرح ونحصل على عدد من النقاط سنتعلم كيف نحرك اللاعبين باستخدام الأكواد البرمجية الجميلة  </p>
                       <ul class="list-item">
-
-
                         <li class="instruction"> x :تعني حركة أفقية </li>
                         <li class="instruction"> y :تعني حركة عمودية</li>
                         <li class="instruction"> - : تعني رجوع </li>
                         <li class="instruction"> + : تعني تقدم</li>
-
-
                       </ul>
                     </div>
                   </div>
                 </div>
                 <div class="right-block">
                   <div id="defaultContainer" class="block" o>
-                    <h2 class="title" >تتبع معنا </h2>
-  		                <ul class="dragcode">
-  			                   <li class="dragcodeId" >37</li>
-  			                      <li class="dragcodeId" >38</li>
-  			                         <li class="dragcodeId" >39</li>
-  			                            <li class="dragcodeId" >40</li>
-                                        </ul>
-                                        <ul class="dragcode">
-                    			                   <li class="dragcodeIds" ><img src="/images/left.png" width="20" height="20"></li>
-                    			                      <li class="dragcodeIds" ><img src="/images/down.png" width="20" height="20"></li>
-                    			                         <li class="dragcodeIds" > <img src="/images/right.png" width="20" height="20"></li>
-                    			                            <li class="dragcodeIds" > <img src="/images/up.png" width="20" height="20"></li>
-                                                          </ul>
-                                                          <ul class="dragcode">
-                                                               <li class="dragcodeIds" >سنرجع خطوات لليسار على مستوى x الخط الأفقي</li>
-                                                                  <li class="dragcodeIds" > سنرجع خطوات للخلف على مستوى y الخط العمودي </li>
-                                                                     <li class="dragcodeIds" > نتقدم خطوات لليمين على مستوى x الخط الأفقي </li>
-                                                                        <li class="dragcodeIds" > نتقدم خطوات للأمام على مستوى y الخط العمودي</li>
-                                                                            </ul>
-
-                  </div>
+                  <h2 class="title" >تتبع معنا </h2>
+                   <ul class="dragcode">
+                     <li class="dragcodeId" >37</li>
+                     <li class="dragcodeId" >38</li>
+                     <li class="dragcodeId" >39</li>
+                     <li class="dragcodeId" >40</li>
+                   </ul>
+                   <ul class="dragcode">
+	                   <li class="dragcodeIds" ><img src="/images/left.png" width="20" height="20"></li>
+                     <li class="dragcodeIds" ><img src="/images/down.png" width="20" height="20"></li>
+                     <li class="dragcodeIds" > <img src="/images/right.png" width="20" height="20"></li>
+                     <li class="dragcodeIds" > <img src="/images/up.png" width="20" height="20"></li>
+                  </ul>
+                  <ul class="dragcode">
+                       <li class="dragcodeIds" >سنرجع خطوات لليسار على مستوى x الخط الأفقي</li>
+                       <li class="dragcodeIds" > سنرجع خطوات للخلف على مستوى y الخط العمودي </li>
+                       <li class="dragcodeIds" > نتقدم خطوات لليمين على مستوى x الخط الأفقي </li>
+                       <li class="dragcodeIds" > نتقدم خطوات للأمام على مستوى y الخط العمودي</li>
+                  </ul>
+                </div>
                   <div id="drop" class="block-code" >
-                    <h2 style="display:flex;justify-content:center; align-content:center;color:red;"> اكتب في المربعات الفارغة الكود المناسب </h2>
+                    <h2 > اكتب في المربعات الفارغة الكود المناسب </h2>
                     <form  id = "code" name="game" action="JavaScript:Assessment()">
-       if<tr><td>( </td><td><input type="text" name="left" id="left" required autocomplete="off"/></td> <td> in keycode)</td>
-           <td>{hero.x -= hero.speed * modifier;}</td>  </tr>
+
+    <span class="code-info"> if</span>  <tr><td>( </td><td><input type="text" name="left" id="left" required autocomplete="off"/></td> <td> <span class="code-info">in keycode</span>)</td>
+           <td>{<span class="code-info-o">hero.x -= hero.speed * modifier;</span>}</td>  </tr>
 <span id="leftspan" style="color:green"></span><br/>
- if<tr><td>(  </td><td><input type="text" name="down" id="down" required required autocomplete="off"/></td> <td> in keycode)</td>
-           <td>{hero.y -= hero.speed * modifier;}</td>  </tr>
+ <span class="code-info">if</span><tr><td>(  </td><td><input type="text" name="down" id="down" required required autocomplete="off"/> <span class="code-info">in keycode</span>)</td>
+           <td>{<span class="code-info-o">hero.y -= hero.speed * modifier;}</span></td>  </tr>
 <span id="downspan" style="color:green"></span><br/>
-if<tr><td>(  </td><td><input type="text" name="right" id="right" required required autocomplete="off"/></td> <td> in keycode)</td>
-           <td>{hero.x += hero.speed * modifier;}</td>  </tr>
+<span class="code-info">if</span><tr><td>(  </td><td><input type="text" name="right" id="right" required required autocomplete="off"/></td> <td> <span class="code-info">in keycode</span>)</td>
+           <td>{<span class="code-info-o">hero.x += hero.speed * modifier;</span>}</td>  </tr>
 <span id="rightspan" style="color:green"></span><br/>
-if<tr><td> ( </td><td><input type="text" name="up" id="up" required required autocomplete="off"/></td> <td> in keycode)</td>
-           <td>{hero.y += hero.speed * modifier;}</td>  </tr>
+<span class="code-info">if</span><tr><td> ( </td><td><input type="text" name="up" id="up" required required autocomplete="off"/></td> <td> <span class="code-info">in keycode</span>)</td>
+           <td>{<span class="code-info-o">hero.y += hero.speed * modifier;</span>}</td>  </tr>
 <span id="upspan" style="color:green"></span><br/>
-      <input type="submit" name="submit" id="submit" value="افحص الكود " />
-   </form>
+ </form>
                   </div>
+                  <input type="submit" name="submit" id="submit" value="افحص الكود " />
                 </div>
               </div>
             </div>
