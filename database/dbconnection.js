@@ -1,7 +1,7 @@
 const { Pool } = require('pg');
 require('env2')('config.env');
 
-if (!process.env.DB_URL) {
+if (!process.env.DATABASE_URL) {
   throw new Error('DATABASE_URL  is undefined. ');
 }
 module.exports = new Pool({
