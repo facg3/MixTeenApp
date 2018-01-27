@@ -26,7 +26,7 @@ if (signup) {
       const user = {
         username: username.value,
         email: email.value,
-        password: username.value,
+        password: password.value,
       };
       fetch('/signup', {
         method: 'POST',

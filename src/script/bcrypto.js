@@ -11,12 +11,10 @@ const hashPassword = password => new Promise((resolve, reject) => {
     }
   });
 });
-const compPassword = (password, hashedPassword) =>
-  new Promise((resolve, reject) => {
-    bcrypt.compare(password, hashedPassword, (err, res) => {
-      if (err)reject(err);
-      else resolve(res);
-    });
+const compPassword = (password, hashedPassword) => new Promise((resolve, reject) => {
+  bcrypt.compare(password, hashedPassword, (err, res) => {
+    if (err)reject(err);
+    else resolve(res);
   });
-
+});
 module.exports = { hashPassword, compPassword };

@@ -1,5 +1,5 @@
 
-const dbConnection = require('../dbConnection.js');
+const dbConnection = require('../dbconnection.js');
 
 const sql = 'select * from posts';
 const getPost = (cb) => {
