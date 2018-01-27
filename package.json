@@ -4,10 +4,10 @@
   "description": "it's an application for teaching the children how to code through games",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "start:watch": "nodemon src/index.js",
-    "test": "tape database/test/database.js",
-    "test:router": "tape src/test/testRouter.js"
+    "start": "node ./src/index.js",
+    "start:watch": "nodemon ./src/index.js",
+    "test": "tape ./database/test/database.js",
+    "test:router": "tape ./src/test/testRouter.js"
   },
   "repository": {
     "type": "git",
