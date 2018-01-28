@@ -12,6 +12,7 @@ const favicon = require('serve-favicon');
 const cookieParser = require('cookie-parser');
 
 const express = require('express');
+const error = require('./controllers/error');
 const { errors } = require('celebrate');
 
 const app = express();
@@ -32,4 +33,6 @@ module.exports = app
   .use(cookieParser())
   .set('port', process.env.PORT || 4000)
   .use(routes)
-  .use(errors());
+  .use(errors())
+  .use(error.server)
+  .use(error.client);

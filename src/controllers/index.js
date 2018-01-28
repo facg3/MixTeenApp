@@ -14,7 +14,6 @@ const about = require('./about');
 
 const schem = require('./schem');
 const { celebrate } = require('celebrate');
-const error = require('./error');
 
 
 module.exports = router
@@ -27,6 +26,4 @@ module.exports = router
   .get('/logout', logout.get)
   .get('/contact', contact.get)
   .get('/levels', levels.get)
-  .get('/about', about.get)
-  .get('/error', error.client)
-  .get('/error', error.server);
+  .get('/about', about.get);
