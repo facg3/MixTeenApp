@@ -25,7 +25,11 @@ exports.post = (req, res) => {
             res.json({ success: true, username: userData.username, login: true });
           } else res.json({ message: 'password is wrong' });
         })
-        .catch((error) => { res.render('signin'); });
+        .catch((error) => {
+          console.error(error);
+          res
+          .status(500)
+          .json({success: false});
     } else {
       res.json({ message: 'user is not found' });
     }
