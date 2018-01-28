@@ -92,7 +92,7 @@
 }
 .but_form {
     margin-top: 1.5em;
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
 }
 .valid{
   width: 100%;
@@ -101,4 +101,7 @@
   align-self: flex-start;
   justify-self: center;
   color: #c97a5f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
