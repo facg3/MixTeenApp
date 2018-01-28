@@ -38,7 +38,7 @@ if (signIn) {
         if (data.success) {
           window.location.pathname = '/game';
         } else {
-          genErrorMessage(data.details[0].message);
+          genErrorMessage('Password or user name is not valid');
         }
       })
       .catch((err) => {
