@@ -28,8 +28,9 @@ exports.post = (req, res) => {
         .catch((error) => {
           console.error(error);
           res
-          .status(500)
-          .json({success: false});
+            .status(500)
+            .json({ success: false });
+        });
     } else {
       res.json({ message: 'user is not found' });
     }
