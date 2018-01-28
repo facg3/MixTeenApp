@@ -38,7 +38,7 @@ if (signIn) {
         if (data.success) {
           window.location.pathname = '/game';
         } else {
-          genErrorMessage(data.message);
+          genErrorMessage(data.details[0].message);
         }
       })
       .catch((err) => {
