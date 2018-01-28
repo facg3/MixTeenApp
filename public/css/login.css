@@ -17,6 +17,7 @@
 }
 #sp_form form{
   width: 50%;
+  margin-bottom: 5px;
 }
 .input_L input {
     border-color: rgb(209, 61, 61);
@@ -91,6 +92,7 @@
 }
 .but_form {
     margin-top: 1.5em;
+    margin-bottom: 5px; 
 }
 .valid{
   width: 100%;
@@ -98,6 +100,5 @@
   display: flex;
   align-self: flex-start;
   justify-self: center;
-  background-color: #c97a5f;
-  color: #fff;
+  color: #c97a5f;
 }

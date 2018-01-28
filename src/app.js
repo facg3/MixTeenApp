@@ -13,7 +13,7 @@ const cookieParser = require('cookie-parser');
 
 const express = require('express');
 const error = require('./controllers/error');
-const { errors } = require('celebrate');
+const { isCelebrate } = require('celebrate');
 
 const app = express();
 module.exports = app
@@ -33,6 +33,9 @@ module.exports = app
   .use(cookieParser())
   .set('port', process.env.PORT || 4000)
   .use(routes)
-  .use(errors())
+  .use((err, req, res, next) => {
+    if (!isCelebrate(err)) return next(err);
+    res.status(200).json(err);
+  })
   .use(error.server)
   .use(error.client);

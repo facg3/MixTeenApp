@@ -1,20 +1,22 @@
 const signup = document.getElementById('signup');
-const validate = function (data) {
+const genErrorBlock = (validateMessage) => {
+  const node = document.createTextNode(validateMessage);
   const div = document.createElement('div');
   div.classList.add('valid');
-  const node = document.createTextNode(data);
   div.appendChild(node);
-  const container = document.getElementById('sp_form');
-  container.insertBefore(div, container.firstChild);
+  const container = document.querySelector('form');
+  container.appendChild(div);
 };
-const checkdiv = function (data) {
+
+const genErrorMessage = (validationError) => {
   if (document.querySelector('.valid')) {
     document.querySelector('.valid').remove();
-    validate(data);
+    genErrorBlock(validationError);
   } else {
-    validate(data);
+    genErrorBlock(validationError);
   }
 };
+
 if (signup) {
   signup.addEventListener('click', (e) => {
     e.preventDefault();
@@ -40,16 +42,14 @@ if (signup) {
           if (data.success) {
             window.location.pathname = '/';
           } else {
-            checkdiv(data.message);
+            genErrorMessage(data.details[0].message);
           }
         })
         .catch((err) => {
-          if (err) {
-            window.location.pathname = '/error';
-          }
+          window.location.pathname = '/error';
         });
     } else {
-      checkdiv('please write a correct password');
+      genErrorMessage('please write a correct password');
     }
   });
 }
