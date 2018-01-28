@@ -19,7 +19,7 @@ exports.post = (req, res) => {
         res.cookie('token', token);
         res.json({ success: true, username: userData.username });
       })
-      .catch(err => res.status(400).json({ message: 'user is exist' }));
+      .catch(err => res.status(400).json({ message: 'user is exist', err }));
   }).catch((err) => {
     res.status(400).render('/error', { err });
   });
